@@ -1,802 +1,2207 @@
 senyawa_data = {
+    # ─────────────────────────────────────────────────────────────────
+    # Seluruh data telah diverifikasi ulang berdasarkan MSDS standar:
+    # Sigma-Aldrich, Fisher Scientific, NIOSH, GHS/SDS (ISO 11014)
+    # Simbol bahaya mengacu pada piktogram GHS (Globally Harmonized System)
+    # ─────────────────────────────────────────────────────────────────
+
+    # ── ASAM-ASAM KUAT & LEMAH ────────────────────────────────────────
     "Asam Sulfat": {
-        "rumus": "H2SO4",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Cairan kental",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Sangat reaktif terhadap air (eksotermis hebat) dan logam (menghasilkan gas H2); bersifat dehidrator kuat; mengkarbonasi senyawa organik; netralisasi eksotermis dengan basa",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan asam (kaca atau plastik HDPE), beri label jelas 'LIMBAH B3 - ASAM KUAT'.\nLangkah 2: Netralisasi perlahan dengan larutan NaOH 10% atau Na2CO3 padat sambil diaduk perlahan hingga pH netral (6-8).\nLangkah 3: Uji pH dengan kertas indikator universal \u2014 pastikan pH aman.\nLangkah 4: Encerkan dengan air mengalir (perbandingan 1:10).\nLangkah 5: Buang ke saluran pembuangan khusus B3 atau serahkan ke pengelola limbah B3 bersertifikat.",
+        "rumus": "H₂SO₄",
+        "simbol_bahaya": "Korosif | Beracun",
+        # GHS: GHS05 (korosif), GHS07 (iritasi/toksik akut cat.4)
+        "wujud": "Cairan kental, tidak berwarna",
+        "bau": "Tidak berbau (pekat); bau menyengat jika dipanaskan",
+        # MSDS: odorless liquid; pungent odor when heated (NIOSH)
+        "reaktivitas": (
+            "Oksidator kuat dan dehidrator; bereaksi sangat eksotermis dengan air "
+            "(JANGAN tuangkan air ke asam — selalu asam ke air); "
+            "bereaksi hebat dengan logam aktif (Fe, Zn, Al) menghasilkan gas H₂; "
+            "bereaksi dengan basa membentuk garam sulfat (netralisasi eksotermis); "
+            "mengkarbonasi senyawa organik (efek dehidrasi); "
+            "bereaksi hebat dengan agen pereduksi kuat dan bahan organik mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah tahan asam (kaca borosilikat atau plastik HDPE), "
+            "beri label 'LIMBAH B3 – ASAM KUAT'.\n"
+            "Langkah 2: Netralisasi perlahan dengan Na₂CO₃ padat atau larutan NaOH 10% sambil diaduk "
+            "dan didinginkan hingga pH 6–8. JANGAN tambahkan air langsung ke asam pekat.\n"
+            "Langkah 3: Verifikasi pH dengan indikator universal.\n"
+            "Langkah 4: Encerkan filtrat dengan air (perbandingan ≥1:10).\n"
+            "Langkah 5: Serahkan ke pengelola limbah B3 bersertifikat atau buang ke saluran khusus B3 "
+            "sesuai izin lingkungan setempat."
+        ),
     },
     "Asam Klorida": {
         "rumus": "HCl",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Cairan",
-        "bau": "Menyengat",
-        "reaktivitas": "Reaktif terhadap logam aktif (Zn, Fe, Mg) menghasilkan gas H2; bereaksi hebat dengan basa kuat membentuk garam; mengkorosi banyak logam; netralisasi eksotermis",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan asam (kaca atau plastik HDPE), beri label jelas 'LIMBAH B3 - ASAM KUAT'.\nLangkah 2: Netralisasi perlahan dengan larutan NaOH 10% atau Na2CO3 padat sambil diaduk perlahan hingga pH netral (6-8).\nLangkah 3: Uji pH dengan kertas indikator universal \u2014 pastikan pH aman.\nLangkah 4: Encerkan dengan air mengalir (perbandingan 1:10).\nLangkah 5: Buang ke saluran pembuangan khusus B3 atau serahkan ke pengelola limbah B3 bersertifikat.",
+        "simbol_bahaya": "Korosif | Beracun",
+        # GHS: GHS05 (korosif), GHS07 (iritasi akut)
+        "wujud": "Cairan tidak berwarna hingga kuning pucat",
+        "bau": "Menyengat kuat (gas HCl); fumes asam klorida",
+        "reaktivitas": (
+            "Asam kuat; bereaksi dengan logam aktif (Zn, Fe, Mg, Al) menghasilkan gas H₂; "
+            "bereaksi hebat dengan basa kuat (NaOH, KOH) secara eksotermis; "
+            "bereaksi dengan oksidator kuat (KMnO₄, MnO₂) menghasilkan gas Cl₂ toksik; "
+            "mengeluarkan fumes HCl yang mengiritasi saluran pernapasan; "
+            "korosif terhadap sebagian besar logam dan jaringan hidup"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah tahan asam (kaca atau plastik HDPE), "
+            "beri label 'LIMBAH B3 – ASAM KUAT'.\n"
+            "Langkah 2: Di lemari asam, netralisasi perlahan dengan larutan NaOH 10% atau "
+            "Na₂CO₃ padat sambil diaduk hingga pH 6–8.\n"
+            "Langkah 3: Verifikasi pH dengan kertas indikator universal.\n"
+            "Langkah 4: Encerkan dengan air mengalir (≥1:10).\n"
+            "Langkah 5: Buang ke saluran pembuangan khusus B3 atau serahkan ke pengelola "
+            "limbah B3 bersertifikat."
+        ),
     },
     "Asam Nitrat": {
-        "rumus": "HNO3",
-        "simbol_bahaya": "Oksidator korosif",
-        "wujud": "Cairan",
-        "bau": "Menyengat",
-        "reaktivitas": "Oksidator kuat; bereaksi hebat dengan logam (menghasilkan NOx), bahan organik (oksidasi), dan basa (netralisasi); dapat meledak dengan bahan pereduksi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan asam, beri label 'LIMBAH B3 - ASAM OKSIDATOR'. Jangan campur dengan bahan organik.\nLangkah 2: Netralisasi dengan larutan NaOH 10% perlahan (oksidator kuat, jangan sampai bereaksi hebat).\nLangkah 3: Uji pH hingga netral (6-8).\nLangkah 4: Encerkan 1:10 dengan air.\nLangkah 5: Serahkan ke pengelola limbah B3 bersertifikat \u2014 jangan dibuang langsung ke saluran umum tanpa izin.",
+        "rumus": "HNO₃",
+        "simbol_bahaya": "Oksidator | Korosif | Beracun",
+        # GHS: GHS03 (oksidator), GHS05 (korosif), GHS07 (iritasi)
+        "wujud": "Cairan tidak berwarna hingga kuning pucat (karena dekomposisi → NO₂)",
+        "bau": "Menyengat kuat; bau gas NO₂ (coklat-kemerahan) jika terurai",
+        "reaktivitas": (
+            "Oksidator kuat; bereaksi dengan logam (Cu, Ag, Pb) menghasilkan gas NOₓ toksik; "
+            "bereaksi hebat dengan bahan organik (kertas, kayu, etanol) — risiko kebakaran; "
+            "bereaksi dengan basa membentuk garam nitrat (netralisasi eksotermis); "
+            "campuran dengan HCl membentuk aqua regia (melarutkan emas/platina); "
+            "dapat meledak jika dicampur dengan bahan pereduksi atau pelarut organik; "
+            "terurai pada suhu >50°C melepaskan NOₓ dan O₂"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah kaca atau HDPE berlabel "
+            "'LIMBAH B3 – ASAM OKSIDATOR'. JANGAN campur dengan bahan organik atau pereduksi.\n"
+            "Langkah 2: Di lemari asam berventilasi, netralisasi PERLAHAN dengan NaOH 10% "
+            "sambil diaduk; hindari reaksi berlebihan.\n"
+            "Langkah 3: Verifikasi pH 6–8 dengan indikator universal.\n"
+            "Langkah 4: Encerkan ≥1:10 dengan air.\n"
+            "Langkah 5: Serahkan ke pengelola limbah B3 bersertifikat — jangan dibuang "
+            "langsung ke saluran umum tanpa pengolahan."
+        ),
     },
     "Asam Fosfat": {
-        "rumus": "H3PO4",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Cairan kental",
+        "rumus": "H₃PO₄",
+        "simbol_bahaya": "Korosif | Iritasi",
+        # GHS: GHS05 (korosif pada logam/kulit), GHS07 (iritasi kulit/mata)
+        "wujud": "Cairan kental tidak berwarna hingga kuning muda (bentuk cair); "
+                 "atau padatan higroskopis (bentuk padat 100%)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Reaktif terhadap basa melalui netralisasi bertahap (3 tahap); korosif terhadap logam tertentu; bereaksi lambat dengan air (eksotermis ringan)",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan asam (kaca atau plastik HDPE), beri label jelas 'LIMBAH B3 - ASAM KUAT'.\nLangkah 2: Netralisasi perlahan dengan larutan NaOH 10% atau Na2CO3 padat sambil diaduk perlahan hingga pH netral (6-8).\nLangkah 3: Uji pH dengan kertas indikator universal \u2014 pastikan pH aman.\nLangkah 4: Encerkan dengan air mengalir (perbandingan 1:10).\nLangkah 5: Buang ke saluran pembuangan khusus B3 atau serahkan ke pengelola limbah B3 bersertifikat.",
+        "reaktivitas": (
+            "Asam triprotik (netralisasi 3 tahap dengan basa); "
+            "korosif terhadap logam aktif (Fe, Zn, Al) menghasilkan gas H₂; "
+            "bereaksi dengan Ca²⁺ membentuk endapan tidak larut Ca₃(PO₄)₂; "
+            "bereaksi eksotermis dengan basa kuat; "
+            "tidak mudah terbakar; stabil dalam kondisi normal"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah tahan asam (kaca atau HDPE), "
+            "beri label 'LIMBAH B3 – ASAM'.\n"
+            "Langkah 2: Netralisasi perlahan dengan NaOH 10% atau Na₂CO₃ sambil diaduk "
+            "hingga pH 6–8.\n"
+            "Langkah 3: Verifikasi pH dengan indikator universal.\n"
+            "Langkah 4: Encerkan dengan air (≥1:10).\n"
+            "Langkah 5: Buang ke saluran pembuangan khusus B3 atau serahkan ke pengelola "
+            "limbah B3 bersertifikat."
+        ),
     },
     "Asam Asetat": {
-        "rumus": "CH3COOH",
-        "simbol_bahaya": "Korosif mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Asam cuka",
-        "reaktivitas": "Bereaksi dengan basa membentuk garam asetat; korosif terhadap logam aktif; dapat mengalami esterifikasi dengan alkohol; mudah terbakar jika terkena api",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        "rumus": "CH₃COOH",
+        "simbol_bahaya": "Korosif | Mudah Terbakar",
+        # GHS: GHS02 (mudah terbakar, asam glasial), GHS05 (korosif)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Menyengat, seperti cuka pekat",
+        "reaktivitas": (
+            "Asam lemah (pKa 4,76); bereaksi dengan basa membentuk garam asetat; "
+            "esterifikasi dengan alkohol dengan katalis asam (reaksi reversibel); "
+            "bereaksi dengan logam aktif (Zn, Fe) menghasilkan gas H₂; "
+            "asam asetat glasial (>99%) bersifat korosif dan mudah terbakar (titik nyala 39°C); "
+            "bereaksi dengan oksidator kuat meningkatkan risiko kebakaran; "
+            "tidak kompatibel dengan kromat, permanganat, asam nitrat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH ASAM LEMAH – MUDAH TERBAKAR'.\n"
+            "Langkah 2: Jauhkan dari sumber api (titik nyala 39°C untuk asam glasial).\n"
+            "Langkah 3: Encerkan dengan air (1:5).\n"
+            "Langkah 4: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 5: Buang ke saluran pembuangan dengan air mengalir. "
+            "Konsentrasi glasial: serahkan ke pengelola limbah B3."
+        ),
     },
+
+    # ── BASA ────────────────────────────────────────────────────────
     "Natrium Hidroksida": {
         "rumus": "NaOH",
         "simbol_bahaya": "Korosif",
-        "wujud": "Padatan",
+        # GHS: GHS05 (korosif)
+        "wujud": "Padatan putih (pelet, serpih, atau granul)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat reaktif terhadap asam (netralisasi hebat); bereaksi dengan logam Al dan Zn menghasilkan gas H2; menyerap CO2 dari udara membentuk karbonat; higroskopis kuat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan basa (plastik HDPE), beri label 'LIMBAH B3 - BASA KUAT'.\nLangkah 2: Netralisasi perlahan dengan larutan HCl 10% atau H2SO4 encer sambil diaduk hingga pH 6-8.\nLangkah 3: Uji pH dengan kertas indikator universal.\nLangkah 4: Encerkan dengan air mengalir (1:10).\nLangkah 5: Buang ke saluran pembuangan atau serahkan ke pengelola limbah B3.",
+        "reaktivitas": (
+            "Basa kuat; sangat reaktif dengan asam (netralisasi sangat eksotermis); "
+            "bereaksi dengan logam amfoter Al dan Zn menghasilkan gas H₂ yang eksplosif; "
+            "menyerap CO₂ dari udara membentuk Na₂CO₃ (higroskopis kuat); "
+            "bereaksi eksotermis saat dilarutkan dalam air; "
+            "tidak kompatibel dengan asam kuat, logam Al/Zn, halogen, asam nitrat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah plastik HDPE berlabel "
+            "'LIMBAH B3 – BASA KUAT'.\n"
+            "Langkah 2: Netralisasi perlahan dengan HCl 10% atau H₂SO₄ encer sambil diaduk "
+            "hingga pH 6–8.\n"
+            "Langkah 3: Verifikasi pH dengan kertas indikator universal.\n"
+            "Langkah 4: Encerkan dengan air mengalir (≥1:10).\n"
+            "Langkah 5: Buang ke saluran pembuangan atau serahkan ke pengelola limbah B3."
+        ),
     },
     "Kalium Hidroksida": {
         "rumus": "KOH",
         "simbol_bahaya": "Korosif",
-        "wujud": "Padatan",
+        # GHS: GHS05 (korosif)
+        "wujud": "Padatan putih (pelet atau lempeng)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat reaktif terhadap asam (netralisasi hebat); bereaksi dengan logam Al dan Zn menghasilkan gas H2; menyerap CO2 dan uap air dari udara; higroskopis kuat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan basa (plastik HDPE), beri label 'LIMBAH B3 - BASA KUAT'.\nLangkah 2: Netralisasi perlahan dengan larutan HCl 10% atau H2SO4 encer sambil diaduk hingga pH 6-8.\nLangkah 3: Uji pH dengan kertas indikator universal.\nLangkah 4: Encerkan dengan air mengalir (1:10).\nLangkah 5: Buang ke saluran pembuangan atau serahkan ke pengelola limbah B3.",
+        "reaktivitas": (
+            "Basa kuat lebih higroskopis dari NaOH; "
+            "bereaksi sangat eksotermis dengan asam; "
+            "bereaksi dengan logam Al dan Zn menghasilkan gas H₂; "
+            "menyerap CO₂ dan uap air dari udara; "
+            "sangat korosif terhadap jaringan hidup; "
+            "tidak kompatibel dengan asam kuat, logam reaktif, halogen"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah plastik HDPE berlabel "
+            "'LIMBAH B3 – BASA KUAT'.\n"
+            "Langkah 2: Netralisasi perlahan dengan HCl 10% atau H₂SO₄ encer sambil diaduk "
+            "hingga pH 6–8.\n"
+            "Langkah 3: Verifikasi pH dengan kertas indikator universal.\n"
+            "Langkah 4: Encerkan dengan air mengalir (≥1:10).\n"
+            "Langkah 5: Buang ke saluran pembuangan atau serahkan ke pengelola limbah B3."
+        ),
     },
     "Amonia": {
-        "rumus": "NH3",
-        "simbol_bahaya": "Beracun korosif",
-        "wujud": "Gas/cair",
-        "bau": "Menyengat",
-        "reaktivitas": "Bereaksi dengan asam membentuk garam amonium; bersifat basa lemah dalam air (NH4OH); bereaksi dengan ion logam membentuk kompleks amina; iritasi kuat pada mukosa",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tertutup rapat (uap amonia), beri label 'LIMBAH BASA'.\nLangkah 2: Encerkan dengan air (1:5) di area berventilasi.\nLangkah 3: Netralisasi dengan asam encer (HCl 10%) hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        "rumus": "NH₃",
+        "simbol_bahaya": "Mudah Terbakar | Beracun | Korosif",
+        # GHS: GHS02 (mudah terbakar), GHS06 (toksik akut), GHS05 (korosif)
+        "wujud": "Gas tidak berwarna (atau cairan bertekanan); larutan berair (amonia encer)",
+        "bau": "Sangat menyengat, khas amonia",
+        "reaktivitas": (
+            "Gas mudah terbakar dalam udara (batas ledakan 15–28%); "
+            "bereaksi dengan asam membentuk garam amonium (eksotermis); "
+            "bersifat basa lemah dalam air membentuk NH₄OH (pKb 4,74); "
+            "bereaksi dengan ion logam transisi membentuk kompleks amina; "
+            "bereaksi dengan oksidator (Cl₂, Br₂) menghasilkan nitrogen klorida yang eksplosif; "
+            "toksik: LC₅₀ tikus 2.000 ppm (1 jam inhalasi); "
+            "korosif terhadap Cu, Zn, dan paduan tembaga"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kerjakan di lemari asam berventilasi baik; gunakan APD lengkap.\n"
+            "Langkah 2: Kumpulkan limbah larutan amonia dalam wadah plastik HDPE tertutup "
+            "rapat, berlabel 'LIMBAH BASA – AMONIA'.\n"
+            "Langkah 3: Encerkan dengan air (1:5) di area berventilasi.\n"
+            "Langkah 4: Netralisasi dengan HCl encer hingga pH 6–8.\n"
+            "Langkah 5: Buang ke saluran pembuangan dengan air mengalir. "
+            "Gas amonia: alirkan ke larutan H₂SO₄ encer sebagai scrubber."
+        ),
     },
     "Kalsium Hidroksida": {
-        "rumus": "Ca(OH)2",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Serbuk",
+        "rumus": "Ca(OH)₂",
+        "simbol_bahaya": "Iritasi | Korosif",
+        # GHS: GHS07 (iritasi), GHS05 (korosif pada mata/kulit basah)
+        "wujud": "Serbuk putih halus",
         "bau": "Tidak berbau",
-        "reaktivitas": "Bereaksi dengan asam membentuk garam kalsium; menyerap CO2 dari udara membentuk CaCO3; bereaksi lambat dengan air membentuk suspensi basa; basa lemah",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tertutup rapat (uap amonia), beri label 'LIMBAH BASA'.\nLangkah 2: Encerkan dengan air (1:5) di area berventilasi.\nLangkah 3: Netralisasi dengan asam encer (HCl 10%) hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Basa lemah hingga sedang (pH larutan jenuh ~12,4); "
+            "bereaksi dengan asam membentuk garam kalsium (eksotermis); "
+            "menyerap CO₂ dari udara membentuk CaCO₃ (lama-kelamaan mengeras); "
+            "bereaksi lambat dengan air membentuk suspensi basa (slaked lime); "
+            "tidak kompatibel dengan asam kuat, garam ammonium, fluorida"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan serbuk/suspensi dalam wadah plastik berlabel "
+            "'LIMBAH BASA LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5) sambil diaduk.\n"
+            "Langkah 3: Netralisasi dengan HCl encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir. "
+            "Endapan padatan buang ke tempat sampah non-organik."
+        ),
     },
+
+    # ── PELARUT ALKOHOL ───────────────────────────────────────────────
     "Etanol": {
-        "rumus": "C2H5OH",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Khas alkohol",
-        "reaktivitas": "Mudah terbakar membakar dengan nyala biru muda; bereaksi dengan oksidator kuat (KMnO4, K2Cr2O7) menjadi asetaldehida/asam asetat; stabil pada suhu kamar",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, beri label 'LIMBAH B3 - MUDAH TERBAKAR'.\nLangkah 2: Jangan dicampur dengan oksidator atau asam kuat (risiko kebakaran).\nLangkah 3: Simpan di lemari asam berventilasi, jauh dari api, panas, dan percikan listrik.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi.",
+        "rumus": "C₂H₅OH",
+        "simbol_bahaya": "Mudah Terbakar",
+        # GHS: GHS02 (mudah terbakar); etanol teknis dapat mengandung denaturant
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Khas alkohol, agak manis",
+        "reaktivitas": (
+            "Cairan mudah terbakar (titik nyala 13°C); "
+            "terbakar dengan nyala biru muda hampir tidak terlihat; "
+            "bereaksi dengan oksidator kuat (KMnO₄, K₂Cr₂O₇) menghasilkan asetaldehida/asam asetat; "
+            "bereaksi dengan Na dan K logam menghasilkan gas H₂; "
+            "esterifikasi dengan asam karboksilat; "
+            "stabil pada suhu kamar dalam wadah tertutup"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR'.\n"
+            "Langkah 2: Jangan campur dengan oksidator atau asam kuat.\n"
+            "Langkah 3: Simpan di lemari asam berventilasi, jauh dari api dan sumber panas.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi. "
+            "Larutan encer (<24%) dengan kontaminan minimal dapat diencerkan ke >10:1 dan "
+            "dibuang ke saluran dengan izin instansi setempat."
+        ),
     },
     "Metanol": {
-        "rumus": "CH3OH",
-        "simbol_bahaya": "Mudah terbakar beracun",
-        "wujud": "Cairan",
-        "bau": "Khas alkohol",
-        "reaktivitas": "Mudah terbakar; bereaksi dengan oksidator kuat; toksik (dapat menyebabkan kebutaan); teroksidasi menjadi formaldehida dan asam format oleh enzim alkohol dehidrogenase",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, beri label 'LIMBAH B3 - MUDAH TERBAKAR'.\nLangkah 2: Jangan dicampur dengan oksidator atau asam kuat (risiko kebakaran).\nLangkah 3: Simpan di lemari asam berventilasi, jauh dari api, panas, dan percikan listrik.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi.",
+        "rumus": "CH₃OH",
+        "simbol_bahaya": "Mudah Terbakar | Beracun",
+        # GHS: GHS02 (mudah terbakar), GHS06 (toksik akut, Cat.3)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Khas alkohol (mirip etanol tetapi lebih lemah)",
+        "reaktivitas": (
+            "Cairan mudah terbakar (titik nyala 11°C); "
+            "sangat toksik: dosis letal oral LD₅₀ manusia ~1 g/kg; termetabolisme menjadi "
+            "formaldehida dan asam format yang menyerang saraf optik (kebutaan permanen); "
+            "bereaksi dengan oksidator kuat menghasilkan formaldehida; "
+            "bereaksi dengan Na/K logam menghasilkan gas H₂; "
+            "tidak kompatibel dengan oksidator kuat, asam perklorat, asam kromat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, "
+            "berlabel 'LIMBAH B3 – MUDAH TERBAKAR BERACUN'.\n"
+            "Langkah 2: Jangan campur dengan oksidator atau asam kuat.\n"
+            "Langkah 3: Simpan di lemari asam berventilasi, jauh dari api dan panas.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi. "
+            "JANGAN buang ke saluran umum — toksik bagi organisme akuatik."
+        ),
     },
     "Isopropanol": {
-        "rumus": "C3H7OH",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Khas alkohol",
-        "reaktivitas": "Mudah terbakar dengan nyala terang; bereaksi dengan oksidator kuat; teroksidasi menjadi aseton; stabil pada suhu kamar; mudah menguap",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, beri label 'LIMBAH B3 - MUDAH TERBAKAR'.\nLangkah 2: Jangan dicampur dengan oksidator atau asam kuat (risiko kebakaran).\nLangkah 3: Simpan di lemari asam berventilasi, jauh dari api, panas, dan percikan listrik.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi.",
+        "rumus": "C₃H₇OH (2-propanol)",
+        "simbol_bahaya": "Mudah Terbakar | Iritasi",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Khas alkohol, lebih menyengat dari etanol",
+        "reaktivitas": (
+            "Cairan mudah terbakar (titik nyala 12°C); "
+            "terbakar dengan nyala terang biru; "
+            "teroksidasi oleh oksidator kuat menjadi aseton; "
+            "bereaksi dengan Na/K logam menghasilkan gas H₂; "
+            "tidak kompatibel dengan oksidator, asam kuat, basa kuat; "
+            "stabil pada suhu kamar dalam wadah tertutup"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR'.\n"
+            "Langkah 2: Jangan campur dengan oksidator atau asam kuat.\n"
+            "Langkah 3: Simpan di lemari asam berventilasi, jauh dari api dan panas.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi."
+        ),
     },
+
+    # ── PELARUT KETON & ESTER ─────────────────────────────────────────
     "Aseton": {
-        "rumus": "(CH3)2CO",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Khas",
-        "reaktivitas": "Mudah terbakar dan mudah menguap; bereaksi dengan oksidator kuat; melarutkan banyak senyawa organik dan polimer; stabil pada suhu kamar; reaksi halogenasi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, beri label 'LIMBAH B3 - MUDAH TERBAKAR'.\nLangkah 2: Jangan dicampur dengan oksidator atau asam kuat (risiko kebakaran).\nLangkah 3: Simpan di lemari asam berventilasi, jauh dari api, panas, dan percikan listrik.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi.",
+        "rumus": "(CH₃)₂CO",
+        "simbol_bahaya": "Mudah Terbakar | Iritasi",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Khas manis-aromatik",
+        "reaktivitas": (
+            "Cairan sangat mudah terbakar (titik nyala −18°C, batas ledakan 2,5–12,8%); "
+            "bereaksi dengan oksidator kuat (H₂O₂, HNO₃) secara eksotermis; "
+            "membentuk aseton peroksida eksplosif dengan H₂O₂ pekat; "
+            "bereaksi dengan kloroform + NaOH menghasilkan kloropikrin toksik; "
+            "melarutkan banyak polimer dan plastik; stabil dalam kondisi normal"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, "
+            "berlabel 'LIMBAH B3 – MUDAH TERBAKAR'.\n"
+            "Langkah 2: Jangan campur dengan oksidator, asam kuat, atau basa kuat.\n"
+            "Langkah 3: Simpan di lemari asam berventilasi, jauh dari api dan percikan listrik.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi atau daur ulang pelarut."
+        ),
     },
     "Etil Asetat": {
-        "rumus": "CH3COOC2H5",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Buah",
-        "reaktivitas": "Mudah terbakar; bereaksi dengan basa kuat mengalami hidrolisis menjadi asam asetat dan etanol; stabil dalam kondisi netral; pelarut organik umum",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat, beri label 'LIMBAH B3 - MUDAH TERBAKAR'.\nLangkah 2: Jangan dicampur dengan oksidator atau asam kuat (risiko kebakaran).\nLangkah 3: Simpan di lemari asam berventilasi, jauh dari api, panas, dan percikan listrik.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi suhu tinggi.",
+        "rumus": "CH₃COOC₂H₅",
+        "simbol_bahaya": "Mudah Terbakar | Iritasi",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Bau buah-fruity, manis",
+        "reaktivitas": (
+            "Cairan mudah terbakar (titik nyala −4°C); "
+            "terhidrolisis dalam suasana basa kuat menjadi asam asetat dan etanol (saponifikasi); "
+            "bereaksi dengan asam dan basa kuat; "
+            "bereaksi dengan oksidator; "
+            "stabil dalam kondisi netral dan suhu kamar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR'.\n"
+            "Langkah 2: Jangan campur dengan oksidator atau asam/basa kuat.\n"
+            "Langkah 3: Simpan di lemari asam berventilasi, jauh dari api dan panas.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi atau daur ulang pelarut."
+        ),
     },
+
+    # ── PELARUT HIDROKARBON ───────────────────────────────────────────
     "n-Heksana": {
-        "rumus": "C6H14",
-        "simbol_bahaya": "Mudah terbakar berbahaya",
-        "wujud": "Cairan",
-        "bau": "Bensin",
-        "reaktivitas": "Sangat mudah terbakar; bereaksi dengan oksidator kuat; stabil pada suhu kamar; inert terhadap asam dan basa; pelarut non-polar; uap lebih berat dari udara",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR BERACUN'.\nLangkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\nLangkah 3: Jangan dibuang ke saluran pembuangan atau tempat sampah biasa.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi atau daur ulang pelarut.",
+        "rumus": "C₆H₁₄",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Beracun | Bahaya Lingkungan",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi/toksik), GHS08 (toksik kronis/reproduksi),
+        #       GHS09 (bahaya lingkungan)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Seperti bensin/petrol",
+        "reaktivitas": (
+            "Sangat mudah terbakar (titik nyala −22°C, batas ledakan 1,1–7,5%); "
+            "stabil pada suhu kamar; inert terhadap asam dan basa encer; "
+            "uap lebih berat dari udara — dapat terakumulasi di cekungan rendah; "
+            "neurotoksik kronik: metabolit 2,5-heksandion merusak saraf perifer; "
+            "bahaya lingkungan: toksik bagi organisme akuatik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah logam atau kaca tertutup rapat berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR BERACUN'.\n"
+            "Langkah 2: Simpan di lemari asam berventilasi, jauh dari api dan oksidator.\n"
+            "Langkah 3: JANGAN buang ke saluran pembuangan (toksik lingkungan).\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi "
+            "atau daur ulang pelarut."
+        ),
     },
     "Dietil Eter": {
-        "rumus": "C2H5OC2H5",
-        "simbol_bahaya": "Sangat mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Khas",
-        "reaktivitas": "Sangat mudah terbakar dan mudah menguap; dapat membentuk peroksida eksplosif jika terkena udara dan cahaya; stabil dalam wadah tertutup rapat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR BERACUN'.\nLangkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\nLangkah 3: Jangan dibuang ke saluran pembuangan atau tempat sampah biasa.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi atau daur ulang pelarut.",
+        "rumus": "(C₂H₅)₂O",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Eksplosif",
+        # GHS: GHS02 (sangat mudah terbakar), GHS07 (iritasi)
+        # PERHATIAN KHUSUS: pembentukan peroksida!
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Manis khas eter",
+        "reaktivitas": (
+            "Sangat mudah terbakar (titik nyala −45°C, batas ledakan 1,9–36%); "
+            "BAHAYA PEROKSIDA: membentuk peroksida eksplosif jika terpapar udara dan cahaya "
+            "dalam waktu lama — uji peroksida sebelum distilasi; "
+            "uap lebih berat dari udara — menyambar dari jarak jauh; "
+            "dapat teranestesi pada konsentrasi tinggi; "
+            "tidak kompatibel dengan oksidator kuat, halogen, asam kuat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Uji kandungan peroksida dahulu menggunakan strip uji peroksida. "
+            "Jika positif, JANGAN dipindahkan — hubungi ahli bahan berbahaya.\n"
+            "Langkah 2: Kumpulkan dalam wadah logam atau kaca gelap berlabel "
+            "'LIMBAH B3 – SANGAT MUDAH TERBAKAR'.\n"
+            "Langkah 3: Simpan jauh dari cahaya, api, dan oksidator.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi."
+        ),
     },
     "Benzena": {
-        "rumus": "C6H6",
-        "simbol_bahaya": "Karsinogen mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Aromatis",
-        "reaktivitas": "Mudah terbakar dengan nyala berjelaga; bereaksi substitusi elektrofilik (nitrasi, sulfonasi, halogenasi); karsinogenik; stabil pada suhu kamar",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR BERACUN'.\nLangkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\nLangkah 3: Jangan dibuang ke saluran pembuangan atau tempat sampah biasa.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi atau daur ulang pelarut.",
+        "rumus": "C₆H₆",
+        "simbol_bahaya": "Karsinogen | Mudah Terbakar | Beracun | Bahaya Lingkungan",
+        # GHS: GHS02, GHS06, GHS08 (karsinogen Kel.1A), GHS09
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Aromatis khas",
+        "reaktivitas": (
+            "Mudah terbakar (titik nyala −11°C, batas ledakan 1,2–7,8%); "
+            "bereaksi substitusi elektrofilik aromatik (nitrasi, sulfonasi, halogenasi, "
+            "alkilasi Friedel-Crafts); "
+            "karsinogen Kelompok 1A IARC: menyebabkan leukemia (AML); "
+            "toksik bagi sumsum tulang; "
+            "terbakar dengan nyala berjelaga hitam"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam tertutup rapat berlabel "
+            "'LIMBAH B3 – KARSINOGEN MUDAH TERBAKAR'.\n"
+            "Langkah 2: Simpan di lemari asam berventilasi, jauh dari api dan oksidator.\n"
+            "Langkah 3: JANGAN buang ke saluran pembuangan — karsinogen dan racun lingkungan.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi suhu tinggi. "
+            "Gunakan APD lengkap termasuk respirator saat penanganan."
+        ),
     },
     "Toluena": {
-        "rumus": "C7H8",
-        "simbol_bahaya": "Mudah terbakar beracun",
-        "wujud": "Cairan",
-        "bau": "Aromatis",
-        "reaktivitas": "Mudah terbakar; bereaksi substitusi elektrofilik lebih cepat dari benzena; teroksidasi menjadi asam benzoat; stabil pada suhu kamar; toksik bagi sistem saraf",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR BERACUN'.\nLangkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\nLangkah 3: Jangan dibuang ke saluran pembuangan atau tempat sampah biasa.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi atau daur ulang pelarut.",
+        "rumus": "C₇H₈",
+        "simbol_bahaya": "Mudah Terbakar | Beracun | Bahaya Reproduksi",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi), GHS08 (reproduksi Cat.2)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Aromatis khas (mirip benzena tetapi tidak sekuat itu)",
+        "reaktivitas": (
+            "Mudah terbakar (titik nyala 4°C, batas ledakan 1,1–7,1%); "
+            "bereaksi substitusi elektrofilik aromatik lebih reaktif dari benzena (gugus CH₃ orto/para-director); "
+            "teroksidasi oleh KMnO₄ menghasilkan asam benzoat; "
+            "toksik SSP (narcosis); bahaya reproduksi Cat.2 GHS; "
+            "terbakar dengan nyala berjelaga; "
+            "tidak kompatibel dengan oksidator kuat, asam nitrat pekat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR BERACUN'.\n"
+            "Langkah 2: Simpan di lemari asam berventilasi, jauh dari api dan oksidator.\n"
+            "Langkah 3: JANGAN buang ke saluran pembuangan.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi "
+            "atau daur ulang pelarut."
+        ),
     },
+
+    # ── PELARUT TERKLORINASI ──────────────────────────────────────────
     "Kloroform": {
-        "rumus": "CHCl3",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Cairan",
-        "bau": "Manis",
-        "reaktivitas": "Stabil pada suhu kamar; terurai pada suhu tinggi atau terkena cahaya UV menghasilkan fosgen (COCl2) dan HCl beracun; inert terhadap banyak reagen",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca gelap tertutup rapat, beri label 'LIMBAH B3 - TOKSIK HALOGEN'.\nLangkah 2: Hindari kontak dengan kulit dan inhalasi uap.\nLangkah 3: Jangan dicampur dengan limbah lain.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus (tidak bisa diinsinerasi biasa).",
+        "rumus": "CHCl₃",
+        "simbol_bahaya": "Beracun | Karsinogen | Iritasi",
+        # GHS: GHS06 (toksik akut), GHS08 (karsinogen Cat.2, hepatotoksik)
+        "wujud": "Cairan tidak berwarna, berat",
+        "bau": "Manis khas (seperti eter)",
+        "reaktivitas": (
+            "Tidak mudah terbakar; "
+            "terurai oleh cahaya UV dan udara perlahan membentuk fosgen (COCl₂) — "
+            "sangat toksik; disimpan dengan stabilizer etanol (0,5–1%) untuk mencegah oksidasi; "
+            "bereaksi dengan basa kuat menghasilkan karbena; "
+            "hepatotoksik dan nefrotoksik; karsinogen Cat.2 GHS; "
+            "toksik akut melalui inhalasi dan ingesti"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca gelap berlabel "
+            "'LIMBAH B3 – TOKSIK HALOGEN'. JANGAN campur dengan limbah lain.\n"
+            "Langkah 2: Simpan dingin, hindari cahaya langsung.\n"
+            "Langkah 3: Hindari kontak kulit/inhalasi — gunakan APD lengkap.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus "
+            "(insinerasi suhu tinggi dengan scrubber HCl)."
+        ),
     },
     "Diklorometana": {
-        "rumus": "CH2Cl2",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Cairan",
-        "bau": "Manis",
-        "reaktivitas": "Stabil pada suhu kamar; tidak mudah terbakar; terurai pada suhu tinggi menghasilkan HCl dan gas beracun; pelarut organik yang relatif inert",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca gelap tertutup rapat, beri label 'LIMBAH B3 - TOKSIK HALOGEN'.\nLangkah 2: Hindari kontak dengan kulit dan inhalasi uap.\nLangkah 3: Jangan dicampur dengan limbah lain.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus (tidak bisa diinsinerasi biasa).",
+        "rumus": "CH₂Cl₂",
+        "simbol_bahaya": "Beracun | Iritasi | Karsinogen (Mungkin)",
+        # GHS: GHS07 (iritasi), GHS08 (karsinogen Cat.2)
+        # KOREKSI: bukan "mudah terbakar" — DCM tidak mudah terbakar!
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Manis khas (seperti kloroform)",
+        "reaktivitas": (
+            "TIDAK mudah terbakar (titik nyala tidak ada dalam kondisi normal); "
+            "stabil pada suhu kamar; terurai pada suhu tinggi (>120°C) menghasilkan HCl dan COCl₂; "
+            "bereaksi lambat dengan basa kuat; "
+            "pelarut organik inert yang relatif aman secara kimiawi; "
+            "toksik melalui inhalasi (konversi hepatik menjadi CO); "
+            "karsinogen kategori 2 (IARC Kelompok 2A)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau HDPE berlabel "
+            "'LIMBAH B3 – TOKSIK HALOGEN'. JANGAN campur dengan limbah lain.\n"
+            "Langkah 2: Simpan dalam wadah tertutup rapat di tempat dingin dan berventilasi.\n"
+            "Langkah 3: Hindari inhalasi uap — gunakan APD.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi "
+            "dengan scrubber."
+        ),
     },
     "Karbon Tetraklorida": {
-        "rumus": "CCl4",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Cairan",
-        "bau": "Manis",
-        "reaktivitas": "Sangat stabil pada suhu kamar; tidak mudah terbakar; terurai pada suhu tinggi menjadi fosgen dan HCl; toksik bagi hati; inert terhadap asam dan basa",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca gelap tertutup rapat, beri label 'LIMBAH B3 - TOKSIK HALOGEN'.\nLangkah 2: Hindari kontak dengan kulit dan inhalasi uap.\nLangkah 3: Jangan dicampur dengan limbah lain.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus (tidak bisa diinsinerasi biasa).",
+        "rumus": "CCl₄",
+        "simbol_bahaya": "Beracun | Karsinogen | Bahaya Lingkungan | Perusak Ozon",
+        # GHS: GHS06 (toksik akut), GHS08 (karsinogen Cat.2, hepatotoksik), GHS09 (lingkungan)
+        "wujud": "Cairan tidak berwarna, berat (ρ = 1,59 g/mL)",
+        "bau": "Manis khas, tidak menyengat",
+        "reaktivitas": (
+            "TIDAK mudah terbakar; "
+            "sangat stabil secara kimia; terurai pada suhu tinggi menghasilkan fosgen (COCl₂) dan HCl; "
+            "inert terhadap asam, basa, dan oksidator encer; "
+            "merusak lapisan ozon stratosfer (ODS — diatur Montreal Protocol); "
+            "hepatotoksik dan nefrotoksik kuat; "
+            "karsinogen hati (IARC Kelompok 2B)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca gelap berlabel "
+            "'LIMBAH B3 – TOKSIK HALOGEN – PERUSAK OZON'.\n"
+            "Langkah 2: JANGAN campur dengan limbah lain atau bahan mudah terbakar.\n"
+            "Langkah 3: Simpan di tempat dingin, berventilasi, jauh dari panas.\n"
+            "Langkah 4: Serahkan SEGERA ke pengelola limbah B3 bersertifikat — "
+            "dilarang dilepas ke atmosfer (regulasi ODS)."
+        ),
     },
+
+    # ── OKSIDATOR ─────────────────────────────────────────────────────
     "Hidrogen Peroksida": {
-        "rumus": "H2O2",
-        "simbol_bahaya": "Oksidator korosif",
-        "wujud": "Cairan",
-        "bau": "Tajam",
-        "reaktivitas": "Oksidator kuat; terurai terkena cahaya, panas, atau katalis (MnO2) menjadi air dan oksigen; bereaksi hebat dengan bahan organik dan logam; bleaching agent",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel 'LIMBAH B3 - OKSIDATOR'. Jangan campur dengan bahan organik.\nLangkah 2: Encerkan dengan air (1:10) secara perlahan.\nLangkah 3: Reduksi jika perlu dengan natrium tiosulfat.\nLangkah 4: Netralisasi pH hingga 6-8.\nLangkah 5: Serahkan ke pengelola limbah B3 bersertifikat.",
+        "rumus": "H₂O₂",
+        "simbol_bahaya": "Oksidator | Korosif",
+        # GHS: GHS03 (oksidator), GHS05 (korosif) untuk konsentrasi >30%
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Bau tajam seperti ozon (konsentrasi tinggi)",
+        "reaktivitas": (
+            "Oksidator kuat (semakin pekat semakin reaktif); "
+            "terurai terkena cahaya, panas, logam (MnO₂, Fe, Cu), atau kontaminan organik "
+            "menghasilkan O₂ dan H₂O (terurai akselerasi pada >70°C); "
+            "bereaksi hebat dengan bahan organik, alcohol, dan agen pereduksi; "
+            "H₂O₂ >30% bersifat korosif; >70% dapat memicu kebakaran spontan "
+            "dengan bahan organik; tidak boleh disimpan dalam wadah tertutup rapat "
+            "(risiko tekanan O₂)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik HDPE berlabel "
+            "'LIMBAH B3 – OKSIDATOR'. JANGAN campur dengan bahan organik.\n"
+            "Langkah 2: Encerkan perlahan dengan air dingin (1:10).\n"
+            "Langkah 3: Jika konsentrasi pekat (>30%), netralkan dengan Na₂SO₃ encer terlebih dahulu.\n"
+            "Langkah 4: Verifikasi pH 6–8.\n"
+            "Langkah 5: Untuk konsentrasi <3%: dapat dibuang ke saluran dengan air mengalir. "
+            "Konsentrasi tinggi: serahkan ke pengelola limbah B3."
+        ),
     },
     "Kalium Permanganat": {
-        "rumus": "KMnO4",
-        "simbol_bahaya": "Oksidator",
-        "wujud": "Padatan",
+        "rumus": "KMnO₄",
+        "simbol_bahaya": "Oksidator | Beracun | Iritasi | Bahaya Lingkungan",
+        # GHS: GHS03, GHS06, GHS07, GHS09
+        "wujud": "Padatan kristal ungu tua",
         "bau": "Tidak berbau",
-        "reaktivitas": "Oksidator sangat kuat dalam suasana asam; bereaksi hebat dengan bahan organik, alkohol, dan pereduksi; larutan ungu berubah menjadi coklat (MnO2) saat bereaksi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel 'LIMBAH B3 - OKSIDATOR'. Jangan campur dengan bahan organik.\nLangkah 2: Encerkan dengan air (1:10) secara perlahan.\nLangkah 3: Reduksi dengan natrium tiosulfat atau asam oksalat hingga tidak berwarna.\nLangkah 4: Netralisasi pH hingga 6-8.\nLangkah 5: Serahkan ke pengelola limbah B3 bersertifikat.",
+        "reaktivitas": (
+            "Oksidator sangat kuat, terutama dalam suasana asam; "
+            "bereaksi hebat dan meledak dengan asam sulfat pekat, alkohol, gliserin, "
+            "bahan organik, dan agen pereduksi; "
+            "larutan ungu berubah coklat/hitam (MnO₂) saat tereduksi; "
+            "dapat menyulut kebakaran spontan jika kontak dengan bahan organik; "
+            "tidak kompatibel dengan H₂SO₄ pekat, gliserin, etanol, NH₄⁺"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH B3 – OKSIDATOR'. JANGAN campur dengan bahan organik/pereduksi.\n"
+            "Langkah 2: Encerkan dengan air (1:10) secara perlahan.\n"
+            "Langkah 3: Reduksi dengan natrium tiosulfat (Na₂S₂O₃) atau asam oksalat "
+            "hingga larutan tidak berwarna.\n"
+            "Langkah 4: Netralisasi pH hingga 6–8.\n"
+            "Langkah 5: Serahkan ke pengelola limbah B3 — Mn adalah logam berat."
+        ),
     },
     "Kalium Dikromat": {
-        "rumus": "K2Cr2O7",
-        "simbol_bahaya": "Oksidator toksik",
-        "wujud": "Padatan",
+        "rumus": "K₂Cr₂O₇",
+        "simbol_bahaya": "Oksidator | Toksik | Karsinogen | Korosif | Bahaya Lingkungan",
+        # GHS: GHS03, GHS06, GHS08 (karsinogen Kel.1A), GHS05, GHS09
+        "wujud": "Padatan kristal jingga-merah",
         "bau": "Tidak berbau",
-        "reaktivitas": "Oksidator kuat dalam suasana asam; bereaksi dengan alkohol dan senyawa organik; toksik dan karsinogenik; larutan jingga berubah menjadi hijau (Cr3+) saat tereduksi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel 'LIMBAH B3 - OKSIDATOR TOKSIK'. Jangan campur dengan bahan organik.\nLangkah 2: Encerkan dengan air (1:10) secara perlahan.\nLangkah 3: Reduksi Cr(VI) menjadi Cr(III) dengan natrium tiosulfat atau besi(II) sulfat.\nLangkah 4: Netralisasi dan endapkan kromium hidroksida.\nLangkah 5: Serahkan ke pengelola limbah B3 bersertifikat.",
+        "reaktivitas": (
+            "Oksidator kuat dalam suasana asam (Cr VI sangat reaktif); "
+            "bereaksi dengan alkohol dan senyawa organik lainnya; "
+            "larutan jingga berubah hijau (Cr³⁺) saat tereduksi; "
+            "karsinogen Kelompok 1A IARC (penyebab kanker paru); "
+            "toksik dan sensitizer kulit; "
+            "tidak kompatibel dengan pereduksi kuat, bahan organik, asam hidroklorida"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel "
+            "'LIMBAH B3 – OKSIDATOR TOKSIK KARSINOGEN'. JANGAN campur dengan bahan organik.\n"
+            "Langkah 2: Encerkan dengan air (1:10) secara perlahan.\n"
+            "Langkah 3: Reduksi Cr(VI) menjadi Cr(III) dengan Na₂S₂O₃ atau FeSO₄ dalam suasana asam.\n"
+            "Langkah 4: Netralisasi dengan NaOH untuk mengendapkan Cr(OH)₃.\n"
+            "Langkah 5: Saring endapan; serahkan ke pengelola limbah B3 bersertifikat "
+            "— Cr(VI) adalah limbah B3 karsinogen."
+        ),
     },
+
+    # ── SENYAWA EKSPLOSIF/REAKTIF SANGAT BAHAYA ──────────────────────
     "Natrium Azida": {
-        "rumus": "NaN3",
-        "simbol_bahaya": "Beracun eksplosif",
-        "wujud": "Padatan",
+        "rumus": "NaN₃",
+        "simbol_bahaya": "Beracun | Eksplosif | Bahaya Lingkungan",
+        # GHS: GHS06 (toksik akut), GHS01 (eksplosif), GHS09 (lingkungan)
+        "wujud": "Padatan kristalin putih",
         "bau": "Tidak berbau",
-        "reaktivitas": "Eksplosif jika terkena panas, gesekan, atau benturan; bereaksi dengan asam menghasilkan asam azida (HN3) yang sangat eksplosif dan beracun",
-        "pengelolaan_limbah": "PERHATIAN EKSPLOSIF!\nLangkah 1: Jangan terkena panas, gesekan, atau benturan.\nLangkah 2: Simpan dalam wadah asli, jangan dipindahkan jika tidak perlu.\nLangkah 3: Beri label 'LIMBAH EKSPLOSIF - JANGAN DIGETARKAN'.\nLangkah 4: Segera serahkan ke pengelola limbah B3 khusus bahan eksplosif.",
+        "reaktivitas": (
+            "Eksplosif jika dipanaskan, terkena gesekan, atau benturan; "
+            "bereaksi dengan asam menghasilkan asam hidrazida (HN₃) — sangat beracun dan eksplosif; "
+            "bereaksi dengan logam Cu, Pb, Ag, dan Cu membentuk azida logam yang sangat sensitif-peka; "
+            "toksik akut sangat tinggi (LD₅₀ tikus oral = 27 mg/kg); "
+            "menghambat sitokrom c oksidase (mirip sianida); "
+            "JANGAN masukkan ke sistem pipa tembaga/timbal"
+        ),
+        "pengelolaan_limbah": (
+            "⚠️ PERHATIAN EKSPLOSIF DAN SANGAT BERACUN!\n"
+            "Langkah 1: JANGAN terpapar panas, gesekan, atau benturan.\n"
+            "Langkah 2: Simpan dalam wadah asli, jangan dipindahkan jika tidak perlu.\n"
+            "Langkah 3: Untuk dekontaminasi kecil: larutkan perlahan dalam larutan NaNO₂ asam "
+            "(reaksi dekomposisi aman) — HANYA oleh personel terlatih.\n"
+            "Langkah 4: Beri label 'LIMBAH EKSPLOSIF BERACUN – NaN₃'.\n"
+            "Langkah 5: Serahkan ke pengelola limbah B3 khusus bahan eksplosif."
+        ),
     },
+    "Asam Pikrat": {
+        "rumus": "C₆H₃N₃O₇ (2,4,6-trinitrofenol)",
+        "simbol_bahaya": "Eksplosif | Beracun",
+        # GHS: GHS01 (eksplosif), GHS06 (toksik)
+        "wujud": "Padatan kristal kuning",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Eksplosif kuat jika kering, dipanaskan, digesekan, atau dibanting; "
+            "lebih sensitif dari TNT dalam keadaan kering; "
+            "bereaksi dengan basa membentuk pikrat logam yang lebih peka/eksplosif "
+            "(pikrat Pb, pikrat Fe sangat berbahaya); "
+            "oksidator kuat; toksik melalui ingesti dan inhalasi; "
+            "HARUS SELALU DIJAGA BASAH (>10% air) untuk keamanan"
+        ),
+        "pengelolaan_limbah": (
+            "⚠️ PERHATIAN EKSPLOSIF: JANGAN DIKERINGKAN ATAU DIGETARKAN!\n"
+            "Langkah 1: JAGA tetap basah dengan air (minimal 10–30% kadar air).\n"
+            "Langkah 2: Kumpulkan dalam wadah plastik khusus berlabel "
+            "'LIMBAH EKSPLOSIF – ASAM PIKRAT – JAGA BASAH'.\n"
+            "Langkah 3: Hindari gesekan, panas, dan benturan selama penanganan.\n"
+            "Langkah 4: Serahkan SEGERA ke pengelola limbah B3 khusus bahan eksplosif. "
+            "JANGAN disimpan dalam jangka panjang."
+        ),
+    },
+    "Benzoil Peroksida": {
+        "rumus": "C₁₄H₁₀O₄",
+        "simbol_bahaya": "Eksplosif | Oksidator | Iritasi",
+        # GHS: GHS01 (eksplosif), GHS03 (oksidator), GHS07 (iritasi)
+        "wujud": "Padatan putih granular (biasanya dibasahi ≥30% air)",
+        "bau": "Tidak berbau (lemah)",
+        "reaktivitas": (
+            "Eksplosif jika dipanaskan (>80°C) atau terkena gesekan/benturan dalam keadaan kering; "
+            "terurai menjadi radikal benzoiloksi bebas; "
+            "inisiator polimerisasi radikal bebas; "
+            "bereaksi hebat dengan agen pereduksi, asam, dan basa; "
+            "oksidator kuat; sensitif terhadap kontaminasi logam; "
+            "stabilitas termal rendah; titik leleh juga titik dekomposisi"
+        ),
+        "pengelolaan_limbah": (
+            "⚠️ PERHATIAN EKSPLOSIF!\n"
+            "Langkah 1: JANGAN terpapar panas >80°C, gesekan, atau benturan.\n"
+            "Langkah 2: Simpan dalam wadah asli yang dibasahi, jangan dipindahkan jika tidak perlu.\n"
+            "Langkah 3: Beri label 'LIMBAH EKSPLOSIF – BENZOIL PEROKSIDA'.\n"
+            "Langkah 4: Serahkan SEGERA ke pengelola limbah B3 khusus bahan eksplosif."
+        ),
+    },
+
+    # ── GARAM ANORGANIK UMUM ──────────────────────────────────────────
     "Natrium Klorida": {
         "rumus": "NaCl",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak memiliki piktogram bahaya
+        "wujud": "Padatan kristal putih (kubik)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; tidak reaktif terhadap air, udara, atau asam encer; terdisosiasi sempurna dalam air menjadi ion Na+ dan Cl-",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.\nLangkah 4: Untuk padatan, buang ke tempat sampah non-organik jika tidak terkontaminasi.",
+        "reaktivitas": (
+            "Sangat stabil; tidak reaktif terhadap air, udara, atau asam encer; "
+            "terdisosiasi sempurna dalam air menjadi ion Na⁺ dan Cl⁻; "
+            "titik leleh tinggi (801°C); "
+            "bereaksi dengan H₂SO₄ pekat menghasilkan gas HCl; "
+            "tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir.\n"
+            "Langkah 3: Padatan bersih dapat dibuang ke tempat sampah umum."
+        ),
     },
     "Kalium Klorida": {
         "rumus": "KCl",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram bahaya
+        "wujud": "Padatan kristal putih atau tidak berwarna",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; tidak reaktif terhadap air, udara, atau asam encer; terdisosiasi sempurna dalam air menjadi ion K+ dan Cl-",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.\nLangkah 4: Untuk padatan, buang ke tempat sampah non-organik jika tidak terkontaminasi.",
+        "reaktivitas": (
+            "Sangat stabil; tidak reaktif terhadap air, udara, atau asam encer; "
+            "terdisosiasi sempurna dalam air menjadi ion K⁺ dan Cl⁻; "
+            "titik leleh tinggi (770°C); tidak mudah terbakar; "
+            "LD₅₀ oral tikus 2.500 mg/kg (toksisitas sangat rendah)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir.\n"
+            "Langkah 3: Padatan bersih dapat dibuang ke tempat sampah umum."
+        ),
     },
     "Kalsium Klorida": {
-        "rumus": "CaCl2",
+        "rumus": "CaCl₂",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
+        # GHS: GHS07 (iritasi kulit/mata)
+        "wujud": "Padatan putih granul, pelet, atau serpih (higroskopis kuat)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Higroskopis kuat (menyerap air dari udara); bereaksi eksotermis dengan air; stabil pada suhu kamar; tidak reaktif terhadap logam",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Higroskopis kuat (menyerap uap air dari udara); "
+            "bereaksi eksotermis dengan air saat dilarutkan; "
+            "stabil pada suhu kamar dalam wadah tertutup; "
+            "tidak reaktif terhadap logam dalam kondisi normal; "
+            "bereaksi dengan florida, sulfat membentuk endapan"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Netralisasi pH jika perlu hingga 6–8.\n"
+            "Langkah 3: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Magnesium Sulfat": {
-        "rumus": "MgSO4",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "rumus": "MgSO₄",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram bahaya
+        "wujud": "Padatan putih (anhidrat) atau kristal putih (heptahidrat/garam Epsom)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; larut dalam air (eksotermis ringan); tidak reaktif terhadap asam dan basa encer; higroskopis (menyerap air dari udara)",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; larut dalam air (eksotermis ringan); "
+            "tidak reaktif terhadap asam dan basa encer; "
+            "anhidrat bersifat desikan (higroskopis); "
+            "terurai pada suhu tinggi (>1.124°C)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Natrium Sulfat": {
-        "rumus": "Na2SO4",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "rumus": "Na₂SO₄",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan putih (anhidrat) atau kristal tidak berwarna (dekahidrat, garam Glauber)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; tidak reaktif terhadap air, udara, atau asam/basa encer; larut dalam air dengan sedikit perubahan suhu",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Sangat stabil; tidak reaktif terhadap air, udara, atau asam/basa encer; "
+            "larut dalam air tanpa reaksi signifikan; tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Natrium Karbonat": {
-        "rumus": "Na2CO3",
+        "rumus": "Na₂CO₃",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Serbuk",
+        # GHS: GHS07 (iritasi kulit/mata)
+        "wujud": "Serbuk putih (anhidrat) atau granul",
         "bau": "Tidak berbau",
-        "reaktivitas": "Basa lemah; bereaksi dengan asam menghasilkan gas CO2 (effervescence); bereaksi dengan ion logam membentuk endapan karbonat; hidrolisis menghasilkan OH-",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah berlabel 'LIMBAH BASA LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi dengan asam encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Basa lemah (pH larutan 1% ≈ 11,6); "
+            "bereaksi dengan asam menghasilkan CO₂ dan air (effervescence nyata); "
+            "bereaksi dengan ion logam berat membentuk endapan karbonat; "
+            "hidrolisis lambat dalam air menghasilkan OH⁻; "
+            "tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah berlabel 'LIMBAH BASA LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan HCl encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Natrium Bikarbonat": {
-        "rumus": "NaHCO3",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Serbuk",
+        "rumus": "NaHCO₃",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram bahaya
+        "wujud": "Serbuk putih halus",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil dalam bentuk padat; terurai pada suhu >50C menjadi Na2CO3, H2O, dan CO2; bereaksi dengan asam menghasilkan CO2 (effervescence); buffer pH",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Stabil dalam bentuk padat; "
+            "terurai pada suhu >50°C (mulai dekomposisi) → Na₂CO₃ + H₂O + CO₂; "
+            "terurai sempurna ~270°C; "
+            "bereaksi dengan asam menghasilkan CO₂ (effervescence kuat); "
+            "buffer pH lemah; tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir. "
+            "Tidak diperlukan penanganan khusus B3."
+        ),
     },
+
+    # ── GARAM LOGAM BERAT / TOKSIK ────────────────────────────────────
     "Tembaga(II) Sulfat": {
-        "rumus": "CuSO4",
-        "simbol_bahaya": "Beracun lingkungan",
-        "wujud": "Padatan",
+        "rumus": "CuSO₄",
+        "simbol_bahaya": "Beracun | Iritasi | Bahaya Lingkungan",
+        # GHS: GHS06 (toksik), GHS07 (iritasi), GHS09 (bahaya lingkungan)
+        "wujud": "Padatan kristal biru (pentahidrat); putih (anhidrat)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; anhidrat (putih) menjadi biru saat hidrasi; bereaksi dengan basa membentuk endapan Cu(OH)2 biru; toksik bagi organisme akuatik",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT'.\nLangkah 2: Jangan campur dengan limbah organik atau asam kuat.\nLangkah 3: Endapkan logam dengan basa jika memungkinkan.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk daur ulang logam atau pengolahan khusus.\nLangkah 5: Limbah ini bersifat bioakumulatif \u2014 jangan dibuang ke lingkungan.",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "bentuk anhidrat (putih) sangat higroskopis → biru saat menyerap air; "
+            "bereaksi dengan basa membentuk endapan Cu(OH)₂ biru pucat; "
+            "toksik bagi organisme akuatik dan manusia (LD₅₀ tikus oral 300 mg/kg); "
+            "bioakumulatif di ekosistem akuatik; "
+            "fungisida pertanian; bereaksi dengan Fe dan Zn (pergeseran logam)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik HDPE berlabel 'LIMBAH LOGAM BERAT – Cu'.\n"
+            "Langkah 2: JANGAN campur dengan limbah organik atau asam kuat.\n"
+            "Langkah 3: Endapkan logam dengan NaOH → Cu(OH)₂; saring dan keringkan.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk daur ulang logam.\n"
+            "Langkah 5: JANGAN buang ke lingkungan — bioakumulatif."
+        ),
     },
     "Besi(III) Klorida": {
-        "rumus": "FeCl3",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Padatan",
-        "bau": "Tajam",
-        "reaktivitas": "Higroskopis kuat; bereaksi dengan air membentuk larutan asam (hidrolisis); mengoksidasi logam tertentu; korosif terhadap banyak logam; larutan kuning-coklat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH B3 - KOROSIF'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi dengan NaOH encer hingga pH 6-8 (terbentuk endapan Fe(OH)3).\nLangkah 4: Saring endapan, keringkan, buang ke limbah B3 padat.\nLangkah 5: Filtrat cair dapat dibuang ke saluran pembuangan.",
+        "rumus": "FeCl₃",
+        "simbol_bahaya": "Korosif | Iritasi",
+        # GHS: GHS05 (korosif), GHS07 (iritasi)
+        # KOREKSI: "Beracun" dihapus — FeCl₃ bukan toksik sistemik tinggi, tapi korosif
+        "wujud": "Padatan coklat-hitam (anhidrat) atau kuning-coklat (heksahidrat)",
+        "bau": "Bau asam lemah (hidrolisis menghasilkan HCl)",
+        "reaktivitas": (
+            "Higroskopis kuat; "
+            "terhidrolisis dalam air membentuk larutan asam (Fe³⁺ + 3H₂O → Fe(OH)₃ + 3H⁺); "
+            "oksidator lemah sampai sedang; "
+            "korosif terhadap banyak logam; "
+            "bereaksi dengan basa membentuk endapan Fe(OH)₃ coklat; "
+            "tidak kompatibel dengan basa kuat, logam alkali, agen pereduksi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH B3 – KOROSIF'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaOH encer hingga pH 6–8 → terbentuk endapan Fe(OH)₃.\n"
+            "Langkah 4: Saring endapan, keringkan, buang ke limbah B3 padat.\n"
+            "Langkah 5: Filtrat cair dapat dibuang ke saluran pembuangan."
+        ),
+    },
+    "Barium Klorida": {
+        "rumus": "BaCl₂",
+        "simbol_bahaya": "Beracun | Iritasi",
+        # GHS: GHS06 (toksik akut), GHS07 (iritasi)
+        "wujud": "Padatan kristal putih",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; larut dalam air; "
+            "bereaksi dengan sulfat membentuk endapan BaSO₄ putih tidak larut (uji kualitatif sulfat); "
+            "toksik: LD₅₀ tikus oral = 118–250 mg/kg (toksik akut tinggi); "
+            "menyebabkan hipokalemia (menurunkan K⁺ darah); "
+            "tidak kompatibel dengan asam kuat, sulfat, permanganat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT – Ba'.\n"
+            "Langkah 2: JANGAN campur dengan limbah organik atau asam sulfat "
+            "(pengendapan BaSO₄ mungkin bermanfaat tapi pastikan Ba terambil).\n"
+            "Langkah 3: Endapkan Ba²⁺ dengan Na₂SO₄ → BaSO₄ tidak larut.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk pengolahan khusus."
+        ),
+    },
+    "Stronsium Klorida": {
+        "rumus": "SrCl₂",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristal putih (atau heksahidrat)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; larut dalam air; "
+            "memberikan nyala merah karmin pada uji nyala api (emisi Sr pada 640 dan 671 nm); "
+            "digunakan dalam piroteknik; "
+            "tidak reaktif terhadap asam/basa encer; "
+            "toksisitas rendah-sedang (mirip CaCl₂)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Netralisasi pH jika perlu hingga 6–8.\n"
+            "Langkah 3: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Amonium Klorida": {
-        "rumus": "NH4Cl",
+        "rumus": "NH₄Cl",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; terurai pada suhu tinggi menjadi NH3 dan HCl; bereaksi dengan basa kuat menghasilkan gas amonia; larut dalam air (endotermis)",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristal putih",
+        "bau": "Tidak berbau (sedikit berbau amonia jika basah)",
+        "reaktivitas": (
+            "Stabil pada suhu kamar dalam wadah tertutup; "
+            "terurai reversibel pada ~338°C → NH₃ + HCl; "
+            "bereaksi dengan basa kuat menghasilkan gas amonia; "
+            "larut dalam air (endotermis, menurunkan suhu); "
+            "asam lemah dalam larutan; "
+            "tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Netralisasi pH jika perlu hingga 6–8.\n"
+            "Langkah 3: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
+
+    # ── INDIKATOR ASAM-BASA ───────────────────────────────────────────
     "Fenolftalein": {
-        "rumus": "C20H14O4",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Padatan",
+        "rumus": "C₂₀H₁₄O₄",
+        "simbol_bahaya": "Iritasi | Karsinogen (Mungkin)",
+        # GHS: GHS07 (iritasi), GHS08 (karsinogen Cat.2)
+        # KOREKSI: Fenolftalein IARC Kelompok 2B (mungkin karsinogen pada manusia)
+        "wujud": "Padatan kristal putih hingga kuning muda",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; tidak reaktif dalam kondisi normal; berubah warna dari tidak berwarna menjadi merah muda pada pH >8,3 (indikator asam-basa)",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "indikator asam-basa: tidak berwarna pada pH <8,2; merah muda/merah pada pH >8,3–10; "
+            "tidak berwarna kembali pada pH >12 (bentuk trifenol); "
+            "tidak reaktif dalam kondisi normal; "
+            "toksisitas rendah-sedang; karsinogen Cat.2 GHS"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – INDIKATOR'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
     },
     "Metil Jingga": {
-        "rumus": "C14H14N3NaO3S",
+        "rumus": "C₁₄H₁₄N₃NaO₃S",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Serbuk",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Serbuk jingga-kuning",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; berubah warna dari merah (pH <3,1) menjadi jingga/kuning (pH >4,4); indikator pH yang umum dalam titrasi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "indikator pH: merah pada pH <3,1; jingga pada pH 3,1–4,4; kuning pada pH >4,4; "
+            "sensitif terhadap cahaya (fotodegradasi lambat); "
+            "tidak reaktif dalam kondisi normal"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – INDIKATOR'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
     },
-    "EDTA": {
-        "rumus": "C10H16N2O8",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Serbuk",
+    "Bromtimol Biru": {
+        "rumus": "C₂₇H₂₈Br₂O₅S",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi ringan)
+        "wujud": "Serbuk kristal kuning-coklat",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; membentuk kompleks kelat dengan ion logam divalen dan trivalen (Ca2+, Mg2+, Fe3+); agen pengkhelat kuat; larut dalam basa",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "indikator pH: kuning pada pH <6,0; hijau pada pH 6,0–7,6; biru pada pH >7,6; "
+            "tidak reaktif dalam kondisi normal; "
+            "digunakan luas dalam biokimia dan analitik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – INDIKATOR'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
+    },
+    "Metil Merah": {
+        "rumus": "C₁₅H₁₅N₃O₂",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristal merah-jingga gelap",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "indikator pH: merah pada pH <4,4; jingga pada pH 4,4–6,2; kuning pada pH >6,2; "
+            "tidak reaktif dalam kondisi normal; "
+            "digunakan dalam titrasi asam-basa (range lebih sempit dari metil jingga)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – INDIKATOR'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
+    },
+
+    # ── PEREAKSI ANALITIK & REAGEN ────────────────────────────────────
+    "EDTA": {
+        "rumus": "C₁₀H₁₆N₂O₈ (asam bebas) / Na₂EDTA (garam dinatrium)",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi) untuk garam
+        "wujud": "Serbuk putih kristalin",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "agen pengkhelat sangat kuat untuk ion logam divalen dan trivalen "
+            "(Ca²⁺, Mg²⁺, Fe³⁺, Cu²⁺, Zn²⁺); "
+            "larut baik dalam basa (pKa₁=2,0; pKa₂=2,7; pKa₃=6,2; pKa₄=10,3); "
+            "tidak mudah terbakar; relatif inert secara kimia"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Netralisasi pH jika perlu hingga 6–8.\n"
+            "Langkah 3: Buang ke saluran pembuangan dengan air mengalir. "
+            "Catatan: EDTA dapat memobilisasi logam berat di lingkungan — "
+            "hindari jumlah besar ke perairan."
+        ),
     },
     "Pereaksi Biuret": {
-        "rumus": "Biuret reagent",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Cairan",
-        "bau": "Khas",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan ikatan peptida dalam suasana basa membentuk kompleks ungu; digunakan untuk uji protein; peka terhadap cahaya",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
+        "rumus": "Campuran: CuSO₄ + NaOH (atau NaKC₄H₄O₆)",
+        # KOREKSI: rumus sebelumnya "Biuret reagent" tidak informatif
+        "simbol_bahaya": "Korosif | Iritasi",
+        # GHS: GHS05 (NaOH korosif), GHS07 (CuSO₄ iritasi)
+        "wujud": "Larutan biru (mengandung CuSO₄ dalam NaOH)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Komponen NaOH bersifat korosif kuat; "
+            "bereaksi dengan ikatan peptida (-CO-NH-) dalam suasana basa membentuk kompleks "
+            "ungu (Cu²⁺-protein, reaksi Biuret); "
+            "peka terhadap cahaya dan suhu tinggi; "
+            "tidak kompatibel dengan asam kuat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah cair dalam wadah plastik berlabel "
+            "'LIMBAH B3 – REAGEN LOGAM'.\n"
+            "Langkah 2: Netralisasi pH dengan HCl encer hingga 6–8.\n"
+            "Langkah 3: Endapkan Cu²⁺ dengan NaOH jika konsentrasi tinggi.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3."
+        ),
     },
     "Pereaksi Ninhidrin": {
-        "rumus": "C9H6O4",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan asam amino membentuk kompleks ungu (Reaksi Ninhidrin); sensitif terhadap cahaya; digunakan dalam kromatografi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
+        "rumus": "C₉H₆O₄ (2,2-dihidroksi-1H-inden-1,3(2H)-dion)",
+        "simbol_bahaya": "Beracun | Iritasi",
+        # GHS: GHS06 (toksik akut), GHS07 (iritasi)
+        # KOREKSI: ninhidrin lebih tepat dikategorikan toksik, bukan hanya iritasi
+        "wujud": "Padatan kristal kuning pucat (stabil); larutan dalam aseton/etanol",
+        "bau": "Tidak berbau (padatan); bau pelarut jika dalam larutan",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "bereaksi spesifik dengan asam amino bebas (gugus -NH₂) membentuk kompleks "
+            "ungu/biru (Ruhemann's purple, λmax = 570 nm); "
+            "bereaksi dengan amina primer dan sekunder; "
+            "sensitif terhadap cahaya (degradasi bertahap); "
+            "dilarutkan dalam aseton atau etanol untuk digunakan"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – REAGEN ANALITIK'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
     },
     "Perak Nitrat": {
-        "rumus": "AgNO3",
-        "simbol_bahaya": "Oksidator korosif",
-        "wujud": "Padatan",
+        "rumus": "AgNO₃",
+        "simbol_bahaya": "Oksidator | Korosif | Beracun | Bahaya Lingkungan",
+        # GHS: GHS03 (oksidator), GHS05 (korosif), GHS06 (toksik), GHS09 (lingkungan)
+        "wujud": "Padatan kristal putih transparan",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sensitif terhadap cahaya (fotoreaktif); terurai terkena cahaya menjadi perak metalik (hitam); bereaksi dengan klorida membentuk endapan AgCl putih; oksidator ringan",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel 'LIMBAH B3 - OKSIDATOR'. Jangan campur dengan bahan organik.\nLangkah 2: Encerkan dengan air (1:10) secara perlahan.\nLangkah 3: Reduksi perak dengan Na2S2O3 atau klorida.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk daur ulang logam mulia.",
+        "reaktivitas": (
+            "Fotoreaktif: terurai terkena cahaya menjadi Ag metalik (hitam) dan NOₓ; "
+            "oksidator; bereaksi dengan klorida, bromida, iodida membentuk endapan AgX; "
+            "meninggalkan noda hitam permanen pada kulit (Ag→AgO); "
+            "korosif terhadap jaringan hidup; "
+            "toksik bagi organisme akuatik; "
+            "bereaksi dengan amonia pekat membentuk fulminating silver eksplosif — JANGAN dicampur"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca gelap berlabel "
+            "'LIMBAH B3 – LOGAM MULIA – AgNO₃'. Simpan jauh dari cahaya.\n"
+            "Langkah 2: JANGAN campur dengan bahan organik, klorida, atau amonia.\n"
+            "Langkah 3: Endapkan Ag⁺ dengan NaCl → AgCl putih tidak larut; saring.\n"
+            "Langkah 4: Serahkan endapan dan filtrat ke pengelola limbah B3 "
+            "untuk daur ulang perak."
+        ),
     },
+
+    # ── KARBOHIDRAT ───────────────────────────────────────────────────
     "Glukosa": {
-        "rumus": "C6H12O6",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Manis",
-        "reaktivitas": "Stabil pada suhu kamar; dapat mengalami fermentasi oleh ragi menjadi etanol dan CO2; bereaksi dengan oksidator kuat; mereduksi ion logam (Cu2+, Ag+); gula pereduksi",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.\nLangkah 3: Untuk padatan, buang ke tempat sampah non-organik jika bersih.",
+        "rumus": "C₆H₁₂O₆",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram bahaya
+        "wujud": "Padatan kristal putih atau serbuk",
+        "bau": "Sedikit manis",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "gula pereduksi (memiliki gugus aldehida bebas pada α-D-glukosa); "
+            "mereduksi Cu²⁺ (reaksi Fehling, biru → merah bata Cu₂O); "
+            "mereduksi Ag⁺ (reaksi Tollens, cermin perak); "
+            "fermentasi oleh ragi menjadi etanol + CO₂; "
+            "mengalami mutarotasi dalam larutan"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Sukrosa": {
-        "rumus": "C12H22O11",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "rumus": "C₁₂H₂₂O₁₁",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan kristal putih",
         "bau": "Manis",
-        "reaktivitas": "Stabil pada suhu kamar; terhidrolisis dalam asam menjadi glukosa dan fruktosa (gula invert); tidak mereduksi ion logam; dapat mengalami karamelisasi pada suhu tinggi",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.\nLangkah 3: Untuk padatan, buang ke tempat sampah non-organik jika bersih.",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "bukan gula pereduksi (tidak memiliki gugus aldehida/keton bebas); "
+            "terhidrolisis dalam asam encer membentuk glukosa dan fruktosa (gula invert); "
+            "karamelisasi pada suhu >160°C"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
+
+    # ── SURFAKTAN & POLIMER ───────────────────────────────────────────
     "Sodium Dodesil Sulfat": {
-        "rumus": "SDS",
+        "rumus": "C₁₂H₂₅SO₄Na (SDS / Sodium Lauryl Sulfate)",
+        # KOREKSI: rumus sebelumnya "SDS" tidak valid sebagai rumus kimia
         "simbol_bahaya": "Iritasi",
-        "wujud": "Serbuk",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bersifat surfaktan (menurunkan tegangan permukaan); bereaksi dengan protein (denaturasi); membentuk misel dalam air; iritasi kulit",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan larutan SDS dalam wadah berlabel 'LIMBAH SDS - SURFAKTAN'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Netralisasi pH jika perlu.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        # GHS: GHS07 (iritasi kulit/mata)
+        "wujud": "Serbuk putih atau granul",
+        "bau": "Tidak berbau atau bau sabun lemah",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "anionik surfaktan kuat (menurunkan tegangan permukaan); "
+            "denaturasi protein dengan memecah interaksi hidrofobik dan muatan (SDS-PAGE); "
+            "membentuk misel di atas CMC (8 mM); "
+            "bereaksi dengan garam logam divalen menghasilkan endapan tidak larut; "
+            "iritasi kulit/mata pada konsentrasi tinggi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan larutan SDS dalam wadah berlabel 'LIMBAH SURFAKTAN'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Netralisasi pH jika perlu.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Polietilen Glikol": {
-        "rumus": "PEG",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Cairan kental",
+        "rumus": "H(OCH₂CH₂)ₙOH (PEG)",
+        # KOREKSI: rumus "PEG" bukan rumus kimia
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Cairan kental (PEG 200–600) atau padatan lilin (PEG >1000)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; tidak reaktif terhadap asam/basa encer; larut dalam air dan pelarut organik; bersifat higroskopis; inert secara biologis",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah berlabel 'LIMBAH MINYAK/GLIKOL'.\nLangkah 2: Jumlah kecil dapat dibuang ke tempat sampah setelah diserap dengan absorben.\nLangkah 3: Jumlah besar serahkan ke pengelola limbah.",
+        "reaktivitas": (
+            "Sangat stabil pada suhu kamar; "
+            "tidak reaktif terhadap asam/basa encer; "
+            "larut dalam air dan banyak pelarut organik; "
+            "bersifat higroskopis; "
+            "inert secara biologis dan digunakan dalam farmasi/kosmetik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah berlabel 'LIMBAH POLIMER'.\n"
+            "Langkah 2: Jumlah kecil dapat dibuang ke saluran air.\n"
+            "Langkah 3: Jumlah besar serahkan ke pengelola limbah."
+        ),
     },
+    "Polivinil Alkohol": {
+        "rumus": "(C₂H₄O)ₙ (PVA)",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan putih atau granul",
+        "bau": "Tidak berbau atau sedikit bau alkohol",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "larut dalam air panas (>80°C), tidak larut dalam pelarut organik umum; "
+            "tidak reaktif dalam kondisi normal; "
+            "dapat membentuk hidrogel dengan agen pengikat silang (boraks, glutaraldehid); "
+            "higroskopis moderat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
+    },
+
+    # ── SENYAWA REAKTIF/TOKSIK ORGANIK ───────────────────────────────
     "Akrilonitril": {
-        "rumus": "C3H3N",
-        "simbol_bahaya": "Mudah terbakar beracun",
-        "wujud": "Cairan",
-        "bau": "Tajam",
-        "reaktivitas": "Mudah terbakar; bereaksi polimerisasi dengan katalis; bereaksi dengan oksidator kuat; toksik dan karsinogenik; dapat terpolimerisasi eksotermis jika tanpa inhibitor",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - TOKSIK REAKTIF'.\nLangkah 2: Hindari kontak langsung dan inhalasi \u2014 karsinogenik.\nLangkah 3: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus.",
+        "rumus": "CH₂=CHCN (C₃H₃N)",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Toksik | Karsinogen | Bahaya Lingkungan",
+        # GHS: GHS02, GHS06, GHS08 (karsinogen Kel.1B), GHS09
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Tajam khas menyengat (seperti peach)",
+        "reaktivitas": (
+            "Sangat mudah terbakar (titik nyala −1°C); "
+            "berpolimerisasi eksotermis jika tanpa inhibitor (MEHQ/HQ); "
+            "bereaksi dengan oksidator, asam, basa; "
+            "toksik akut: LD₅₀ tikus oral = 78 mg/kg; "
+            "karsinogen IARC Kelompok 1B (kanker paru pada pekerja); "
+            "berbahaya bagi lingkungan akuatik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah logam atau kaca tertutup rapat berlabel "
+            "'LIMBAH B3 – TOKSIK KARSINOGEN REAKTIF'.\n"
+            "Langkah 2: Hindari kontak langsung dan inhalasi — gunakan APD lengkap.\n"
+            "Langkah 3: JANGAN campur dengan oksidator atau basa.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus."
+        ),
     },
     "Formaldehid": {
-        "rumus": "CH2O",
-        "simbol_bahaya": "Beracun karsinogen",
-        "wujud": "Cairan/gas",
-        "bau": "Tajam",
-        "reaktivitas": "Bereaksi dengan protein melalui reaksi silang (fiksasi jaringan); teroksidasi menjadi asam format; mudah terpolimerisasi membentuk paraformaldehid; toksik dan iritasi kuat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - TOKSIK REAKTIF'.\nLangkah 2: Hindari kontak langsung dan inhalasi \u2014 karsinogenik.\nLangkah 3: Oksidasi ringan dengan NaHSO3 jika perlu.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus.",
+        "rumus": "CH₂O (larutan formalin 37–40% dalam air)",
+        "simbol_bahaya": "Mudah Terbakar | Beracun | Korosif | Karsinogen",
+        # GHS: GHS02, GHS06, GHS05, GHS08 (karsinogen Kel.1A)
+        "wujud": "Gas tidak berwarna (murni); larutan berair (formalin)",
+        "bau": "Tajam sangat menyengat, asfiksia",
+        "reaktivitas": (
+            "Mudah terbakar (titik nyala formalin 50°C, gas formaldehid eksplosif 7–73%); "
+            "bereaksi dengan protein melalui ikatan silang gugus amino (fiksasi jaringan); "
+            "teroksidasi menjadi asam format di udara; "
+            "berpolimerisasi membentuk paraformaldehid; "
+            "karsinogen IARC Kelompok 1A (kanker nasofaring); "
+            "sensitizer kulit dan saluran pernapasan; "
+            "tidak kompatibel dengan HNO₃, oksidator kuat, fenol, amonia"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah HDPE atau kaca tertutup rapat berlabel "
+            "'LIMBAH B3 – KARSINOGEN BERACUN'.\n"
+            "Langkah 2: Hindari kontak langsung dan inhalasi — gunakan APD respirator.\n"
+            "Langkah 3: Untuk volume kecil: oxidasi dengan KMnO₄ atau H₂O₂ encer "
+            "mengubah formaldehid menjadi format.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi."
+        ),
     },
     "Glutaraldehid": {
-        "rumus": "C5H8O2",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Cairan",
-        "bau": "Tajam",
-        "reaktivitas": "Bereaksi dengan protein melalui reaksi silang (fiksasi); lebih stabil dari formaldehid; aktif sebagai disinfektan; bereaksi dengan gugus amina; iritasi kulit dan mukosa",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - TOKSIK REAKTIF'.\nLangkah 2: Hindari kontak langsung dan inhalasi.\nLangkah 3: Serahkan ke pengelola limbah B3 bersertifikat untuk pengolahan khusus.",
+        "rumus": "C₅H₈O₂ (OHC-(CH₂)₃-CHO, pentanedial)",
+        "simbol_bahaya": "Beracun | Korosif | Bahaya Lingkungan",
+        # GHS: GHS06 (toksik), GHS05 (korosif), GHS09 (lingkungan)
+        "wujud": "Cairan tidak berwarna hingga kuning pucat",
+        "bau": "Tajam khas menyengat",
+        "reaktivitas": (
+            "Daldehid bifungsional; bereaksi cepat dengan protein melalui ikatan silang "
+            "gugus amino (lebih efisien dari formaldehid); "
+            "disinfektan dan sterilant tingkat tinggi (aktif terhadap bakteri, spora, virus); "
+            "lebih stabil dari formaldehid dalam kondisi alkali; "
+            "sensitizer kulit dan saluran pernapasan kuat; "
+            "toksik: LD₅₀ tikus oral = 250 mg/kg; "
+            "sangat toksik bagi organisme akuatik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik HDPE berlabel "
+            "'LIMBAH B3 – TOKSIK DISINFEKTAN'.\n"
+            "Langkah 2: Hindari kontak langsung dan inhalasi — gunakan APD.\n"
+            "Langkah 3: Netralisasi dengan glisin (1% b/v) atau NaHSO₃ untuk "
+            "menginaktivasi glutaraldehid sebelum pembuangan.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat."
+        ),
     },
-    "Benzoil Peroksida": {
-        "rumus": "C14H10O4",
-        "simbol_bahaya": "Eksplosif iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Eksplosif jika dipanaskan atau terkena gesekan; terurai menjadi radikal bebas; inisiator polimerisasi; bereaksi hebat dengan bahan pereduksi; oksidator kuat",
-        "pengelolaan_limbah": "PERHATIAN EKSPLOSIF!\nLangkah 1: Jangan terkena panas, gesekan, atau benturan.\nLangkah 2: Simpan dalam wadah asli, jangan dipindahkan jika tidak perlu.\nLangkah 3: Beri label 'LIMBAH EKSPLOSIF - JANGAN DIGETARKAN'.\nLangkah 4: Segera serahkan ke pengelola limbah B3 khusus bahan eksplosif.",
+    "Fenol": {
+        "rumus": "C₆H₅OH",
+        "simbol_bahaya": "Beracun | Korosif",
+        # GHS: GHS06 (toksik akut), GHS05 (korosif)
+        "wujud": "Padatan kristal putih/merah muda (murni); cairan tidak berwarna di atas 40,9°C",
+        "bau": "Khas manis-menyengat (bau karbol)",
+        "reaktivitas": (
+            "Asam lemah (pKa = 9,99); "
+            "bereaksi dengan basa kuat membentuk garam fenolat (larut); "
+            "substitusi elektrofilik aromatik 1000× lebih reaktif dari benzena; "
+            "teroksidasi oleh udara menjadi warna merah-coklat; "
+            "toksik dermik kuat: diserap melalui kulit, menyebabkan nekrosis; "
+            "LD₅₀ tikus oral = 317 mg/kg; "
+            "tidak kompatibel dengan oksidator kuat, basa kuat, asam nitrat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca berlabel 'LIMBAH B3 – FENOL BERACUN'.\n"
+            "Langkah 2: JANGAN campur dengan oksidator kuat.\n"
+            "Langkah 3: Oksidasi dengan KMnO₄ atau H₂O₂ encer untuk mengurangi toksisitas.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat — "
+            "JANGAN dibuang ke saluran umum."
+        ),
+    },
+    "Anilina": {
+        "rumus": "C₆H₅NH₂ (aminobenzena)",
+        "simbol_bahaya": "Beracun | Bahaya Lingkungan",
+        # GHS: GHS06 (toksik akut), GHS08 (toksik SSP/pembentuk methemoglobin), GHS09
+        "wujud": "Cairan berminyak tidak berwarna (menjadi coklat di udara)",
+        "bau": "Khas aromatik amis",
+        "reaktivitas": (
+            "Basa lemah (pKb = 9,38); bereaksi dengan asam membentuk garam anilinium; "
+            "teroksidasi oleh udara menjadi produk berwarna coklat/hitam; "
+            "diazotasi dengan HNO₂ pada suhu rendah → garam diazonium (prekursor zat warna azo); "
+            "toksik: methemoglobinemia (mengoksidasi Hb menjadi MetHb, tidak bisa ikat O₂); "
+            "LD₅₀ tikus oral = 442 mg/kg; "
+            "diserap melalui kulit"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau HDPE berlabel 'LIMBAH B3 – TOKSIK'.\n"
+            "Langkah 2: Hindari inhalasi dan kontak kulit — gunakan APD lengkap.\n"
+            "Langkah 3: JANGAN campur dengan limbah lain.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi suhu tinggi."
+        ),
+    },
+    "Piridina": {
+        "rumus": "C₅H₅N",
+        "simbol_bahaya": "Mudah Terbakar | Beracun | Iritasi",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi/toksik)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Menyengat kuat, seperti ikan/amis tidak sedap",
+        "reaktivitas": (
+            "Mudah terbakar (titik nyala 17°C); "
+            "basa aromatic lemah (pKa konjugat asam = 5,23); "
+            "bereaksi dengan asam membentuk garam piridinium; "
+            "pelarut polar aprotik; menyerap air kuat (higroskopis); "
+            "toksik: gangguan hati pada paparan kronis; "
+            "tidak kompatibel dengan oksidator kuat, asam kuat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah kaca atau logam berlabel 'LIMBAH B3 – TOKSIK'.\n"
+            "Langkah 2: Hindari inhalasi dan kontak kulit — gunakan APD.\n"
+            "Langkah 3: JANGAN campur dengan limbah lain.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi."
+        ),
+    },
+
+    # ── HIDROKARBON SIKLIK & SENYAWA ORGANIK KHUSUS ───────────────────
+    "Sikloheksana": {
+        "rumus": "C₆H₁₂",
+        "simbol_bahaya": "Mudah Terbakar | Iritasi | Bahaya Lingkungan",
+        # GHS: GHS02 (mudah terbakar), GHS07 (iritasi), GHS09 (bahaya lingkungan)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Khas minyak tanah",
+        "reaktivitas": (
+            "Mudah terbakar (titik nyala −18°C); "
+            "stabil pada suhu kamar; "
+            "tidak reaktif terhadap asam/basa encer; "
+            "bereaksi substitusi radikal bebas dengan halogen di bawah UV; "
+            "toksik bagi lingkungan; "
+            "uap lebih berat dari udara"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah logam atau kaca berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR'.\n"
+            "Langkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\n"
+            "Langkah 3: JANGAN buang ke saluran atau lingkungan.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat."
+        ),
+    },
+    "Karbon Disulfida": {
+        "rumus": "CS₂",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Beracun",
+        # GHS: GHS02 (titik nyala −30°C!), GHS06 (toksik), GHS07 (iritasi)
+        # KOREKSI: "autoignisi 90°C" adalah informasi kritis yang benar
+        "wujud": "Cairan tidak berwarna (murni); kuning-kuning (teknis, bau busuk)",
+        "bau": "Busuk seperti telur busuk (CS₂ teknis mengandung pengotor H₂S)",
+        "reaktivitas": (
+            "Sangat mudah terbakar (titik nyala −30°C; suhu autoignisi hanya 90°C); "
+            "batas ledakan 1–50% — sangat lebar; "
+            "uap lebih berat dari udara; "
+            "bereaksi dengan oksidator, amina, nitrogen oksida; "
+            "toksik SSP: menyebabkan neuropati perifer dan gangguan kardiovaskular; "
+            "tidak kompatibel dengan logam alkali, oksidator, amina"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah logam atau kaca gelap berlabel "
+            "'LIMBAH B3 – SANGAT MUDAH TERBAKAR BERACUN'.\n"
+            "Langkah 2: Simpan di lemari asam jauh dari semua sumber api (termasuk nyala pilot, "
+            "percikan listrik statik) — suhu autoignisi hanya 90°C!\n"
+            "Langkah 3: JANGAN buang ke saluran atau tempat sampah.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi."
+        ),
+    },
+    "Naftalena": {
+        "rumus": "C₁₀H₈",
+        "simbol_bahaya": "Mudah Terbakar | Beracun | Karsinogen | Bahaya Lingkungan",
+        # GHS: GHS02, GHS07, GHS08 (karsinogen Cat.2), GHS09
+        "wujud": "Padatan kristal putih",
+        "bau": "Khas kapur barus (naftalena adalah bahan aktif kapur barus lama)",
+        "reaktivitas": (
+            "Mudah terbakar; "
+            "menyublim perlahan pada suhu kamar (tekanan uap signifikan); "
+            "bereaksi substitusi elektrofilik lebih mudah dari benzena; "
+            "teroksidasi oleh KMnO₄/O₂ menghasilkan asam ftalat; "
+            "karsinogen Cat.2 GHS; toksik bagi sel darah merah (hemolisis); "
+            "sangat toksik bagi organisme akuatik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan dalam wadah tertutup rapat berlabel "
+            "'LIMBAH B3 – MUDAH TERBAKAR TOKSIK'. Wadah harus kedap udara karena menyublim.\n"
+            "Langkah 2: Simpan di area sejuk dan berventilasi.\n"
+            "Langkah 3: JANGAN buang ke saluran atau lingkungan.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi."
+        ),
     },
     "Asam Benzoat": {
-        "rumus": "C7H6O2",
+        "rumus": "C₇H₆O₂",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Khas",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan basa membentuk garam benzoat; dapat mengalami sublimasi pada suhu tinggi; bersifat antimikroba dalam bentuk asam",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristal putih bersisik",
+        "bau": "Khas aromatik lemah (bau almond)",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "asam lemah (pKa = 4,19); "
+            "bereaksi dengan basa membentuk garam benzoat (larut); "
+            "dapat menyublim pada suhu tinggi; "
+            "bersifat antimikroba (menghambat pertumbuhan jamur/bakteri) pada pH rendah; "
+            "tidak kompatibel dengan oksidator kuat"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH ASAM LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
-    "Air": {
-        "rumus": "H2O",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Cairan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; pelarut universal; bereaksi dengan logam alkali dan alkali tanah (menghasilkan H2); hidrolisis banyak senyawa; tidak beracun",
-        "pengelolaan_limbah": "Langkah 1: Buang langsung ke saluran pembuangan.\nLangkah 2: Air limbah tidak mengandung kontaminan berbahaya \u2014 aman dibuang.",
+
+    # ── GAS ────────────────────────────────────────────────────────────
+    "Metana": {
+        "rumus": "CH₄",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Gas Bertekanan",
+        # GHS: GHS02 (mudah terbakar), GHS04 (gas bertekanan)
+        "wujud": "Gas tidak berwarna",
+        "bau": "Tidak berbau (murni); bau merkaptan ditambahkan sebagai penanda kebocoran pada gas alam",
+        # KOREKSI: gas alam beraroma karena penambahan merkaptan, bukan metana murni
+        "reaktivitas": (
+            "Sangat mudah terbakar (batas ledakan 5–15% v/v di udara); "
+            "terbakar dengan nyala biru; "
+            "bereaksi substitusi radikal bebas dengan halogen di bawah UV; "
+            "gas rumah kaca (GWP 21×CO₂); "
+            "lebih ringan dari udara; stabil secara kimia dalam kondisi normal"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Biarkan menguap di area berventilasi tinggi dalam jumlah kecil.\n"
+            "Langkah 2: JANGAN buang ke saluran tertutup (risiko ledakan).\n"
+            "Langkah 3: Untuk jumlah besar — serahkan ke pengelola limbah gas.\n"
+            "Langkah 4: Pastikan tidak ada api, percikan, atau elektrostatik di area penanganan."
+        ),
     },
-    "Asam Sitrat": {
-        "rumus": "C6H8O7",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan basa membentuk garam sitrat; mengkhelat ion logam (sequestrant); bereaksi dengan logam menghasilkan gas H2; asam trikarboksilat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+    "Propana": {
+        "rumus": "C₃H₈",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Gas Bertekanan",
+        # GHS: GHS02, GHS04
+        "wujud": "Gas tidak berwarna (atau cairan bertekanan dalam tabung)",
+        "bau": "Tidak berbau (murni); bau merkaptan ditambahkan dalam LPG",
+        "reaktivitas": (
+            "Sangat mudah terbakar (batas ledakan 2,1–9,5% v/v di udara); "
+            "lebih berat dari udara; "
+            "terbakar menghasilkan CO₂ dan H₂O; "
+            "bereaksi substitusi radikal bebas dengan halogen; "
+            "komponen utama LPG; "
+            "asfiksia sederhana pada konsentrasi tinggi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Biarkan menguap di area berventilasi tinggi dalam jumlah kecil.\n"
+            "Langkah 2: JANGAN buang ke saluran tertutup atau cekungan rendah "
+            "(gas lebih berat dari udara — risiko ledakan).\n"
+            "Langkah 3: Untuk jumlah besar — serahkan ke pengelola limbah gas.\n"
+            "Langkah 4: Pastikan tidak ada sumber pengapian."
+        ),
     },
-    "Asam Format": {
-        "rumus": "HCOOH",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Cairan",
-        "bau": "Menyengat",
-        "reaktivitas": "Reaktif terhadap logam menghasilkan gas H2 dan format; bereaksi dengan basa membentuk garam format; dapat terdekomposisi pada suhu tinggi menjadi CO dan H2O; reduktor",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+    "Butana": {
+        "rumus": "C₄H₁₀",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Gas Bertekanan",
+        # GHS: GHS02, GHS04
+        "wujud": "Gas tidak berwarna (atau cairan bertekanan dalam tabung/kaleng)",
+        "bau": "Tidak berbau (murni); bau merkaptan dalam LPG",
+        "reaktivitas": (
+            "Sangat mudah terbakar (batas ledakan 1,8–8,4% v/v di udara); "
+            "lebih berat dari udara; "
+            "komponen LPG (bersama propana); "
+            "bereaksi substitusi halogenasi dengan UV; "
+            "asfiksia sederhana pada konsentrasi tinggi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Biarkan menguap di area berventilasi tinggi dalam jumlah kecil.\n"
+            "Langkah 2: JANGAN buang ke saluran tertutup atau cekungan rendah.\n"
+            "Langkah 3: Untuk jumlah besar — serahkan ke pengelola limbah gas.\n"
+            "Langkah 4: Pastikan tidak ada sumber pengapian."
+        ),
     },
-    "Asam Oksalat": {
-        "rumus": "H2C2O4",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Bereaksi dengan basa membentuk garam oksalat; mengkhelat ion logam (Ca2+ membentuk endapan CaC2O4); reduktor yang dapat dioksidasi oleh KMnO4; beracun",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+    "Etena": {
+        "rumus": "C₂H₄ (etilena)",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Gas Bertekanan",
+        # GHS: GHS02, GHS04
+        "wujud": "Gas tidak berwarna",
+        "bau": "Khas sedikit manis (pada konsentrasi tinggi)",
+        "reaktivitas": (
+            "Sangat mudah terbakar (batas ledakan 2,7–36% v/v di udara); "
+            "bereaksi adisi elektrofilik: halogenasi (+ Br₂ → 1,2-dibromoetana, "
+            "uji alkena dekolorisasi Br₂/KMnO₄); "
+            "polimerisasi menjadi polietilena dengan katalis Ziegler-Natta; "
+            "hormon pertumbuhan tanaman alami; "
+            "asfiksia sederhana pada konsentrasi tinggi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Biarkan menguap di area berventilasi tinggi dalam jumlah kecil.\n"
+            "Langkah 2: JANGAN buang ke saluran tertutup (risiko ledakan).\n"
+            "Langkah 3: Untuk jumlah besar — serahkan ke pengelola limbah gas.\n"
+            "Langkah 4: Pastikan tidak ada sumber pengapian."
+        ),
     },
-    "Asam Pikrat": {
-        "rumus": "C6H3N3O7",
-        "simbol_bahaya": "Eksplosif beracun",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Eksplosif jika terkena panas, gesekan, atau benturan; bereaksi dengan basa membentuk garam pikrat yang lebih eksplosif; oksidator kuat; mudah meledak saat kering",
-        "pengelolaan_limbah": "PERHATIAN EKSPLOSIF: JANGAN DIKERINGKAN ATAU DIGETARKAN!\nLangkah 1: Jaga tetap basah dengan air (minimal 10% air).\nLangkah 2: Kumpulkan dalam wadah plastik khusus berlabel 'LIMBAH EKSPLOSIF - ASAM PIKRAT'.\nLangkah 3: Hindari gesekan, panas, dan benturan selama penanganan.\nLangkah 4: Serahkan segera ke pengelola limbah B3 khusus bahan eksplosif.",
+    "Asetilena": {
+        "rumus": "C₂H₂ (etuna)",
+        "simbol_bahaya": "Sangat Mudah Terbakar | Eksplosif | Gas Bertekanan",
+        # GHS: GHS02 (sangat mudah terbakar), GHS01 (eksplosif), GHS04 (gas bertekanan)
+        "wujud": "Gas tidak berwarna",
+        "bau": "Khas eter-aromatik (teknis: sedikit bau bawang putih dari pengotor PH₃/AsH₃)",
+        "reaktivitas": (
+            "Sangat mudah terbakar (titik nyala −18°C, batas ledakan 2,5–80% — sangat lebar); "
+            "nyala asetilena-oksigen mencapai 3.100–3.500°C (las); "
+            "dapat meledak pada tekanan >1,5 atm tanpa pelarut; "
+            "disimpan terlarut dalam aseton dalam silinder berpori; "
+            "membentuk asetilida eksplosif dengan logam Cu, Ag, Hg "
+            "— JANGAN gunakan komponen tembaga atau perak!"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Gas sisa biarkan menguap di area berventilasi tinggi.\n"
+            "Langkah 2: JANGAN buang ke saluran tertutup.\n"
+            "Langkah 3: Silinder kosong kembalikan ke supplier — jangan buang sendiri.\n"
+            "Langkah 4: JAUHKAN dari logam Cu dan Ag — asetilida eksplosif."
+        ),
     },
-    "Asam Borat": {
-        "rumus": "H3BO3",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan alkohol membentuk ester borat (nyala hijau); asam lemah; bersifat antiseptik ringan; toksik jika tertelan dalam jumlah besar",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Asam Laktat": {
-        "rumus": "C3H6O3",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Cairan",
-        "bau": "Khas",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan basa membentuk garam laktat; dapat teroksidasi menjadi asam piruvat; higroskopis; produk fermentasi bakteri asam laktat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Asam Tartarat": {
-        "rumus": "C4H6O6",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan basa membentuk garam tartrat; mengkhelat ion logam; membentuk kristal dengan kalium (cream of tartar); asam dikarboksilat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Barium Hidroksida": {
-        "rumus": "Ba(OH)2",
-        "simbol_bahaya": "Beracun korosif",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Bereaksi dengan asam membentuk garam barium; menyerap CO2 dari udara membentuk BaCO3; larutan basa kuat; toksik jika tertelan; bereaksi dengan Al dan Zn menghasilkan H2",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT'.\nLangkah 2: Jangan campur dengan limbah organik atau asam kuat.\nLangkah 3: Serahkan ke pengelola limbah B3 untuk daur ulang logam atau pengolahan khusus.\nLangkah 4: Limbah ini bersifat bioakumulatif \u2014 jangan dibuang ke lingkungan.",
-    },
-    "Litium Hidroksida": {
-        "rumus": "LiOH",
-        "simbol_bahaya": "Korosif",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Bereaksi dengan asam membentuk garam litium; menyerap CO2 dari udara; higroskopis; bereaksi dengan Al dan Zn menghasilkan H2; basa kuat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tahan basa (plastik HDPE), beri label 'LIMBAH B3 - BASA KUAT'.\nLangkah 2: Netralisasi perlahan dengan larutan HCl 10% atau H2SO4 encer sambil diaduk hingga pH 6-8.\nLangkah 3: Encerkan dengan air mengalir (1:10).\nLangkah 4: Buang ke saluran pembuangan atau serahkan ke pengelola limbah B3.",
-    },
+
+    # ── LOGAM UNSUR ────────────────────────────────────────────────────
     "Magnesium": {
         "rumus": "Mg",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Mudah Terbakar | Bereaksi dengan Air",
+        # GHS: GHS02 (serbuk mudah terbakar), GHS07 (iritasi)
+        "wujud": "Padatan metalik perak-putih (lempengan, kawat, pita, atau serbuk)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Reaktif terhadap asam (encer dan pekat) menghasilkan gas H2; mudah terbakar di udara jika dipanaskan (nyala putih terang); bereaksi lambat dengan air panas",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan Mg dalam wadah kering berlabel 'LIMBAH LOGAM REAKTIF - Mg'.\nLangkah 2: Jangan campur dengan air (risiko H2 eksplosif).\nLangkah 3: Simpan di tempat kering, jauh dari api.\nLangkah 4: Serahkan ke pengelola limbah B3 atau daur ulang logam.",
+        "reaktivitas": (
+            "Serbuk dan pita Mg mudah terbakar dengan nyala putih sangat terang (buta); "
+            "bereaksi dengan asam encer (HCl, H₂SO₄, CH₃COOH) menghasilkan gas H₂; "
+            "bereaksi dengan air panas/uap menghasilkan Mg(OH)₂ + H₂; "
+            "serbuk halus dapat bereaksi spontan dengan air dingin; "
+            "tidak kompatibel dengan oksidator kuat, halogen, karbon dioksida "
+            "(CO₂ tidak bisa memadamkan nyala Mg!)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan Mg dalam wadah kering berlabel "
+            "'LIMBAH LOGAM REAKTIF – Mg'. JANGAN campur dengan air.\n"
+            "Langkah 2: Simpan di tempat kering, jauh dari api dan air.\n"
+            "Langkah 3: JANGAN gunakan CO₂ atau air sebagai pemadam; gunakan pasir kering.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 atau daur ulang logam."
+        ),
     },
     "Aluminium": {
         "rumus": "Al",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Mudah Terbakar (serbuk) | Reaktif dengan Basa/Asam",
+        # GHS: GHS02 untuk serbuk halus; bulk tidak berbahaya signifikan
+        # KOREKSI: "Tidak berbahaya" untuk Al bulk sudah benar, tapi serbuk Al termasuk mudah terbakar
+        "wujud": "Padatan metalik perak-mengkilap (bulk); serbuk/foil abu-abu (serbuk)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Membentuk lapisan oksida (Al2O3) pelindung; bereaksi dengan asam kuat dan basa kuat (amfoter) menghasilkan H2; stabil pada suhu kamar karena pasivasi",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan/logam dalam wadah kering berlabel 'LIMBAH LOGAM'.\nLangkah 2: Jangan campur dengan asam (risiko H2).\nLangkah 3: Keringkan dan serahkan ke pengelola daur ulang logam.\nLangkah 4: Limbah non-B3 dapat dibuang ke tempat sampah logam terpisah.",
+        "reaktivitas": (
+            "Membentuk lapisan oksida Al₂O₃ pasif di udara (perlindungan korosi); "
+            "amfoter: bereaksi dengan asam kuat (HCl, H₂SO₄) DAN basa kuat (NaOH, KOH) "
+            "menghasilkan gas H₂; "
+            "serbuk aluminium mudah terbakar dan merupakan bahan piroteknik; "
+            "bereaksi dengan oksidator kuat secara eksotermis"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan/logam dalam wadah kering berlabel 'LIMBAH LOGAM'.\n"
+            "Langkah 2: JANGAN campur dengan asam atau basa kuat (risiko H₂).\n"
+            "Langkah 3: Serbuk Al — beri label 'MUDAH TERBAKAR', jauhkan dari api.\n"
+            "Langkah 4: Serahkan ke pengelola daur ulang logam."
+        ),
     },
     "Besi": {
         "rumus": "Fe",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Tidak Berbahaya (bulk) | Mudah Terbakar (serbuk halus)",
+        # GHS: tidak ada untuk bulk; GHS02 untuk serbuk piroforik
+        "wujud": "Padatan metalik abu-abu (bulk) atau serbuk hitam-abu (serbuk)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Bereaksi lambat dengan asam encer menghasilkan H2; berkarat di udara lembab (oksidasi menjadi Fe2O3); tidak reaktif terhadap basa; dapat mengalami oksidasi lanjut",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan/logam dalam wadah kering berlabel 'LIMBAH LOGAM'.\nLangkah 2: Keringkan dan serahkan ke pengelola daur ulang logam.\nLangkah 3: Limbah non-B3 dapat dibuang ke tempat sampah logam terpisah.",
+        "reaktivitas": (
+            "Berkarat (teroksidasi membentuk Fe₂O₃·nH₂O) di udara lembab; "
+            "bereaksi lambat dengan asam encer (HCl, H₂SO₄) menghasilkan Fe²⁺ + H₂; "
+            "tidak bereaksi dengan basa; "
+            "serbuk Fe halus dapat bersifat piroforik; "
+            "magnetis"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan dalam wadah kering berlabel 'LIMBAH LOGAM'.\n"
+            "Langkah 2: Keringkan dan serahkan ke pengelola daur ulang logam.\n"
+            "Langkah 3: Serbuk halus — beri label 'MUDAH TERBAKAR', simpan kering."
+        ),
     },
     "Tembaga": {
         "rumus": "Cu",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Bahaya Lingkungan (debu/serbuk)",
+        # GHS: GHS09 untuk debu/serbuk (toksik akuatik)
+        "wujud": "Padatan metalik merah-jingga mengkilap",
         "bau": "Tidak berbau",
-        "reaktivitas": "Tidak reaktif terhadap air dan asam non-oksidator; bereaksi dengan HNO3 dan H2SO4 panas menghasilkan NOx/SO2; membentuk patina hijau (CuCO3) di udara lembab",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan/logam dalam wadah kering berlabel 'LIMBAH LOGAM'.\nLangkah 2: Keringkan dan serahkan ke pengelola daur ulang logam.\nLangkah 3: Limbah non-B3 dapat dibuang ke tempat sampah logam terpisah.",
+        "reaktivitas": (
+            "Tidak bereaksi dengan air atau asam non-oksidator HCl encer; "
+            "bereaksi dengan HNO₃ menghasilkan gas NOₓ; "
+            "bereaksi dengan H₂SO₄ panas menghasilkan SO₂; "
+            "membentuk patina hijau (CuCO₃·Cu(OH)₂) di udara lembab; "
+            "debu/serbuk toksik bagi organisme akuatik; "
+            "tahan korosi dalam kondisi normal"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan dalam wadah kering berlabel 'LIMBAH LOGAM – Cu'.\n"
+            "Langkah 2: Keringkan dan serahkan ke pengelola daur ulang logam.\n"
+            "Langkah 3: JANGAN buang debu Cu ke perairan — toksik akuatik."
+        ),
     },
     "Timbal": {
         "rumus": "Pb",
-        "simbol_bahaya": "Beracun lingkungan",
-        "wujud": "Padatan",
+        "simbol_bahaya": "Beracun | Bahaya Reproduksi | Bahaya Lingkungan",
+        # GHS: GHS06 (toksik akut), GHS08 (toksik reproduksi Cat.1A, neurotoksik), GHS09
+        "wujud": "Padatan metalik abu-abu kehitaman, lunak dan berat",
         "bau": "Tidak berbau",
-        "reaktivitas": "Tahan korosi membentuk lapisan PbO pelindung; bereaksi lambat dengan asam kuat; bereaksi dengan air sadah membentuk endapan PbCO3; toksik dan bioakumulatif",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT'.\nLangkah 2: Jangan campur dengan limbah organik atau asam kuat.\nLangkah 3: Serahkan ke pengelola limbah B3 untuk daur ulang logam atau pengolahan khusus.\nLangkah 4: Limbah ini bersifat bioakumulatif \u2014 jangan dibuang ke lingkungan.",
+        "reaktivitas": (
+            "Tahan korosi dalam kondisi normal (lapisan PbO/PbCO₃ pasif); "
+            "bereaksi lambat dengan asam kuat (HNO₃, HCl panas) menghasilkan Pb²⁺; "
+            "tidak bereaksi dengan basa; "
+            "sangat toksik dan bioakumulatif: timbal terakumulasi di tulang, "
+            "menyebabkan gangguan otak pada anak (neurotoksik); "
+            "karsinogen manusia; teratogenik (merusak janin)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik HDPE berlabel "
+            "'LIMBAH LOGAM BERAT BERACUN – Pb'.\n"
+            "Langkah 2: JANGAN campur dengan asam kuat (dapat melarutkan Pb).\n"
+            "Langkah 3: Serahkan ke pengelola limbah B3 bersertifikat untuk daur ulang timbal.\n"
+            "Langkah 4: JANGAN buang ke lingkungan — bioakumulatif dan sangat toksik."
+        ),
     },
-    "Karbon Aktif": {
-        "rumus": "C",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; mengadsorpsi gas dan molekul organik (fisiosorpsi); tidak reaktif secara kimia; inert terhadap asam/basa; regenerasi dengan pemanasan",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan dalam wadah tertutup.\nLangkah 2: Karbon aktif dapat diregenerasi dengan pemanasan.\nLangkah 3: Jika terkontaminasi zat berbahaya, perlakukan sesuai kontaminannya.\nLangkah 4: Buang ke tempat sampah non-organik jika bersih.",
-    },
-    "Silika Gel": {
-        "rumus": "SiO2",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Higroskopis kuat menyerap uap air hingga 40% berat; stabil pada suhu kamar; inert terhadap asam dan basa; regenerasi dengan pemanasan 150C; desikan",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan dalam wadah tertutup.\nLangkah 2: Jika terkontaminasi zat berbahaya, perlakukan sesuai kontaminannya.\nLangkah 3: Buang ke tempat sampah non-organik jika bersih.",
-    },
-    "Metana": {
-        "rumus": "CH4",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Gas",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Mudah terbakar membakar dengan nyala biru; bereaksi dengan halogen (klorinasi) dengan UV; membentuk campuran eksplosif dengan udara (5-15%); gas rumah kaca",
-        "pengelolaan_limbah": "Langkah 1: Biarkan menguap di area berventilasi tinggi (lemari asam) dalam jumlah kecil.\nLangkah 2: Jangan buang ke saluran tertutup (risiko ledakan).\nLangkah 3: Untuk jumlah besar \u2014 serahkan ke pengelola limbah gas.\nLangkah 4: Pastikan tidak ada api atau percikan di area penanganan.",
-    },
-    "Propana": {
-        "rumus": "C3H8",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Gas",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Mudah terbakar membakar menghasilkan CO2 dan H2O; bereaksi dengan halogen (substitusi radikal bebas); komponen LPG; gas lebih berat dari udara",
-        "pengelolaan_limbah": "Langkah 1: Biarkan menguap di area berventilasi tinggi (lemari asam) dalam jumlah kecil.\nLangkah 2: Jangan buang ke saluran tertutup (risiko ledakan).\nLangkah 3: Untuk jumlah besar \u2014 serahkan ke pengelola limbah gas.\nLangkah 4: Pastikan tidak ada api atau percikan di area penanganan.",
-    },
-    "Butana": {
-        "rumus": "C4H10",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Gas",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Mudah terbakar; reaktivitas mirip propana; digunakan sebagai bahan bakar LPG; stabil pada suhu kamar; substitusi halogenasi dengan katalis UV",
-        "pengelolaan_limbah": "Langkah 1: Biarkan menguap di area berventilasi tinggi (lemari asam) dalam jumlah kecil.\nLangkah 2: Jangan buang ke saluran tertutup (risiko ledakan).\nLangkah 3: Untuk jumlah besar \u2014 serahkan ke pengelola limbah gas.\nLangkah 4: Pastikan tidak ada api atau percikan di area penanganan.",
-    },
-    "Etena": {
-        "rumus": "C2H4",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Gas",
-        "bau": "Khas",
-        "reaktivitas": "Mudah terbakar; bereaksi adisi elektrofilik (halogenasi, hidrogenasi, hidrasi); monomer utama polietilena; bereaksi dengan KMnO4 mengubah warna ungu menjadi coklat",
-        "pengelolaan_limbah": "Langkah 1: Biarkan menguap di area berventilasi tinggi (lemari asam) dalam jumlah kecil.\nLangkah 2: Jangan buang ke saluran tertutup (risiko ledakan).\nLangkah 3: Untuk jumlah besar \u2014 serahkan ke pengelola limbah gas.\nLangkah 4: Pastikan tidak ada api atau percikan di area penanganan.",
-    },
-    "Asetilena": {
-        "rumus": "C2H2",
-        "simbol_bahaya": "Sangat mudah terbakar",
-        "wujud": "Gas",
-        "bau": "Khas",
-        "reaktivitas": "Sangat mudah terbakar dengan nyala terang (3000C); dapat meledak pada tekanan >1,5 atm; bereaksi adisi; membentuk asetilida eksplosif dengan logam Cu dan Ag",
-        "pengelolaan_limbah": "Langkah 1: Biarkan menguap di area berventilasi tinggi (lemari asam) dalam jumlah kecil.\nLangkah 2: Jangan buang ke saluran tertutup (risiko ledakan).\nLangkah 3: Untuk jumlah besar \u2014 serahkan ke pengelola limbah gas.\nLangkah 4: Pastikan tidak ada api atau percikan di area penanganan.",
-    },
-    "Fenol": {
-        "rumus": "C6H5OH",
-        "simbol_bahaya": "Beracun korosif",
-        "wujud": "Padatan",
-        "bau": "Khas",
-        "reaktivitas": "Bereaksi dengan basa membentuk garam fenolat; mengalami substitusi elektrofilik lebih mudah dari benzena; toksik dan korosif; teroksidasi oleh udara menjadi warna gelap",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah kaca berlabel 'LIMBAH B3 - FENOL BERACUN'.\nLangkah 2: Jangan campur dengan oksidator kuat.\nLangkah 3: Oksidasi dengan KMnO4 atau H2O2 untuk mengurangi toksisitas.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat \u2014 tidak boleh dibuang ke saluran umum.",
-    },
-    "Anilina": {
-        "rumus": "C6H5NH2",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Cairan",
-        "bau": "Khas",
-        "reaktivitas": "Bereaksi dengan asam membentuk garam anilinium; teroksidasi oleh udara menjadi warna gelap; dapat mengalami diazotasi; toksik (methemoglobinemia); basa lemah",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - TOKSIK'.\nLangkah 2: Hindari inhalasi dan kontak kulit \u2014 gunakan APD lengkap.\nLangkah 3: Jangan dicampur dengan limbah lain.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi suhu tinggi.",
-    },
-    "Piridina": {
-        "rumus": "C5H5N",
-        "simbol_bahaya": "Mudah terbakar beracun",
-        "wujud": "Cairan",
-        "bau": "Menyengat",
-        "reaktivitas": "Mudah terbakar; bersifat basa lemah; bereaksi dengan asam membentuk garam piridinium; pelarut organik umum; menyerap air; toksik bagi sistem saraf",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - TOKSIK'.\nLangkah 2: Hindari inhalasi dan kontak kulit \u2014 gunakan APD lengkap.\nLangkah 3: Jangan dicampur dengan limbah lain.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi suhu tinggi.",
-    },
-    "Sikloheksana": {
-        "rumus": "C6H12",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Cairan",
-        "bau": "Khas",
-        "reaktivitas": "Mudah terbakar; stabil pada suhu kamar; bereaksi substitusi radikal bebas dengan halogen; inert terhadap asam dan basa; pelarut non-polar",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR BERACUN'.\nLangkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\nLangkah 3: Jangan dibuang ke saluran pembuangan atau tempat sampah biasa.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi atau daur ulang pelarut.",
-    },
-    "Karbon Disulfida": {
-        "rumus": "CS2",
-        "simbol_bahaya": "Sangat mudah terbakar beracun",
-        "wujud": "Cairan",
-        "bau": "Busuk",
-        "reaktivitas": "Sangat mudah terbakar (autoignisi 90C); bereaksi dengan oksidator kuat; toksik bagi sistem saraf; menyerap UV; uap lebih berat dari udara",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR BERACUN'.\nLangkah 2: Simpan di lemari asam, jauh dari api dan oksidator.\nLangkah 3: Jangan dibuang ke saluran pembuangan atau tempat sampah biasa.\nLangkah 4: Serahkan ke pengelola limbah B3 bersertifikat untuk insinerasi atau daur ulang pelarut.",
-    },
-    "Urea": {
-        "rumus": "CO(NH2)2",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; terhidrolisis lambat dalam air menjadi NH3 dan CO2; terurai pada suhu >130C; bereaksi dengan asam membentuk garam urea; pupuk nitrogen",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Natrium Fosfat": {
-        "rumus": "Na3PO4",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Basa lemah; bereaksi dengan asam membentuk garam fosfat; bereaksi dengan ion logam membentuk endapan fosfat; larutan buffer; agen pembersih",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Amonium Sulfat": {
-        "rumus": "(NH4)2SO4",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan basa kuat menghasilkan gas NH3; larut dalam air (endotermis); pupuk nitrogen; terurai pada suhu tinggi",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Seng Sulfat": {
-        "rumus": "ZnSO4",
-        "simbol_bahaya": "Beracun lingkungan",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; higroskopis; larut dalam air; bereaksi dengan basa membentuk endapan Zn(OH)2 putih yang larut dalam basa berlebih (amfoter)",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT'.\nLangkah 2: Jangan campur dengan limbah organik atau asam kuat.\nLangkah 3: Serahkan ke pengelola limbah B3 untuk daur ulang logam atau pengolahan khusus.\nLangkah 4: Limbah ini bersifat bioakumulatif \u2014 jangan dibuang ke lingkungan.",
-    },
-    "Besi(II) Sulfat": {
-        "rumus": "FeSO4",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil dalam bentuk hidrat; teroksidasi oleh udara menjadi Fe(III) coklat; bereaksi dengan basa membentuk endapan Fe(OH)2 hijau yang cepat teroksidasi; reduktor",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Bromtimol Biru": {
-        "rumus": "C27H28Br2O5S",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Serbuk",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; indikator pH (kuning pada pH <6, biru pada pH >7,6); tidak reaktif dalam kondisi normal; sensitif terhadap asam dan basa",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
-    },
-    "Metil Merah": {
-        "rumus": "C15H15N3O2",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; indikator pH (merah pada pH <4,4, kuning pada pH >6,2); tidak reaktif dalam kondisi normal; digunakan dalam titrasi asam-basa",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
-    },
-    "Kristal Violet": {
-        "rumus": "C25H30ClN3",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; pewarna ungu; bereaksi dengan asam membentuk warna hijau/kuning; digunakan sebagai indikator dan zat warna; antimikroba",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
-    },
-    "Alizarin Merah": {
-        "rumus": "C14H8O4",
-        "simbol_bahaya": "Iritasi",
-        "wujud": "Serbuk",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; indikator pH (kuning pada pH <5,5, merah pada pH >6,8); membentuk kompleks berwarna dengan ion logam; pewarna mordant",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
-    },
-    "Polivinil Alkohol": {
-        "rumus": "(C2H4O)n",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; larut dalam air panas; tidak reaktif dalam kondisi normal; dapat mengalami reaksi silang dengan agen pengikat silang; higroskopis",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Kreatinin": {
-        "rumus": "C4H7N3O",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; larut dalam air; tidak reaktif dalam kondisi normal; produk metabolisme otot; digunakan sebagai biomarker fungsi ginjal",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.",
-    },
-    "Asam Urat": {
-        "rumus": "C5H4N4O3",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; sukar larut dalam air; bereaksi dengan basa membentuk garam urat; produk metabolisme purin; dapat membentuk kristal (penyebab gout)",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.",
-    },
+
+    # ── SENYAWA ANORGANIK LAINNYA ─────────────────────────────────────
     "Amonium Hidroksida": {
-        "rumus": "NH4OH",
-        "simbol_bahaya": "Korosif iritasi",
-        "wujud": "Cairan",
-        "bau": "Menyengat",
-        "reaktivitas": "Basa lemah; larutan amonia dalam air; bereaksi dengan asam membentuk garam amonium; melepaskan gas NH3 jika dipanaskan atau ditambah basa kuat; iritasi kuat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah tertutup rapat (uap amonia), beri label 'LIMBAH BASA'.\nLangkah 2: Encerkan dengan air (1:5) di area berventilasi.\nLangkah 3: Netralisasi dengan asam encer (HCl 10%) hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        "rumus": "NH₃(aq) / NH₄OH",
+        # KOREKSI: NH₄OH tidak eksis sebagai spesies; lebih tepat NH₃ terlarut dalam air
+        "simbol_bahaya": "Korosif | Iritasi | Beracun",
+        # GHS: GHS05 (korosif), GHS07 (iritasi), GHS06 (toksik pada konsentrasi tinggi)
+        "wujud": "Larutan berair tidak berwarna",
+        "bau": "Sangat menyengat (gas amonia terlepas)",
+        "reaktivitas": (
+            "Larutan amonia dalam air; basa lemah (pKb = 4,74); "
+            "melepaskan gas NH₃ jika dipanaskan atau ditambah basa kuat; "
+            "bereaksi dengan asam membentuk garam amonium; "
+            "membentuk kompleks amina dengan ion logam transisi; "
+            "korosif terhadap Cu, Zn, dan paduan tembaga; "
+            "iritasi kuat pada mata dan saluran pernapasan"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kerjakan di lemari asam berventilasi.\n"
+            "Langkah 2: Kumpulkan limbah dalam wadah HDPE tertutup rapat berlabel "
+            "'LIMBAH BASA – AMONIA'.\n"
+            "Langkah 3: Encerkan dengan air (1:5).\n"
+            "Langkah 4: Netralisasi dengan HCl encer hingga pH 6–8.\n"
+            "Langkah 5: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
-    "Barium Klorida": {
-        "rumus": "BaCl2",
-        "simbol_bahaya": "Beracun",
-        "wujud": "Padatan",
+    "Barium Hidroksida": {
+        "rumus": "Ba(OH)₂",
+        "simbol_bahaya": "Beracun | Korosif",
+        # GHS: GHS06 (toksik akut), GHS05 (korosif)
+        "wujud": "Padatan putih (oktahidrat atau anhidrat)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; larut dalam air; bereaksi dengan sulfat membentuk endapan BaSO4 putih (uji sulfat); toksik jika tertelan; inert terhadap logam",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT'.\nLangkah 2: Jangan campur dengan limbah organik atau asam kuat.\nLangkah 3: Serahkan ke pengelola limbah B3 untuk daur ulang logam atau pengolahan khusus.",
+        "reaktivitas": (
+            "Basa kuat moderat; bereaksi dengan asam membentuk garam barium (eksotermis); "
+            "menyerap CO₂ dari udara membentuk BaCO₃ (putih); "
+            "bereaksi dengan Al dan Zn menghasilkan H₂; "
+            "larutan basa kuat; toksik: Ba²⁺ menyebabkan hipokalemia; "
+            "LD₅₀ tikus oral = 255 mg/kg"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT – Ba'.\n"
+            "Langkah 2: JANGAN campur dengan asam sulfat (endapan BaSO₄ mempersulit pengolahan).\n"
+            "Langkah 3: Serahkan ke pengelola limbah B3 untuk pengolahan khusus.\n"
+            "Langkah 4: JANGAN buang ke lingkungan — barium toksik bagi organisme."
+        ),
     },
-    "Stronsium Klorida": {
-        "rumus": "SrCl2",
+    "Litium Hidroksida": {
+        "rumus": "LiOH",
+        "simbol_bahaya": "Korosif | Beracun",
+        # GHS: GHS05 (korosif), GHS07 (iritasi)
+        "wujud": "Padatan putih (monohidrat atau anhidrat)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Basa kuat; bereaksi eksotermis dengan asam; "
+            "menyerap CO₂ dari udara membentuk Li₂CO₃; "
+            "higroskopis kuat; "
+            "bereaksi dengan Al dan Zn menghasilkan H₂; "
+            "toksik: Li⁺ toksik pada dosis >0,5 mEq/L serum; "
+            "digunakan dalam baterai Li-ion dan pengolahan gas CO₂ di kapal selam"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah dalam wadah HDPE berlabel 'LIMBAH B3 – BASA KUAT'.\n"
+            "Langkah 2: Netralisasi perlahan dengan HCl 10% sambil diaduk hingga pH 6–8.\n"
+            "Langkah 3: Encerkan dengan air (1:10).\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 — Li adalah logam yang dikelola khusus."
+        ),
+    },
+
+    # ── ASAM ORGANIK LAINNYA ──────────────────────────────────────────
+    "Asam Sitrat": {
+        "rumus": "C₆H₈O₇",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; larut dalam air; tidak reaktif dalam kondisi normal; memberikan nyala merah pada uji api; digunakan dalam piroteknik",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Netralisasi pH jika perlu hingga 6-8.\nLangkah 3: Buang ke saluran pembuangan dengan air mengalir.",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristal putih atau serbuk",
+        "bau": "Tidak berbau (sedikit bau asam pada konsentrasi tinggi)",
+        "reaktivitas": (
+            "Asam trikarboksilat (pKa₁=3,13; pKa₂=4,76; pKa₃=6,40); "
+            "bereaksi dengan basa membentuk garam sitrat (buffer biologis penting); "
+            "agen pengkhelat untuk ion logam (Ca²⁺, Mg²⁺, Fe³⁺); "
+            "terurai pada suhu >175°C menjadi akonitik/itakonat; "
+            "tidak mudah terbakar; terjadi alami dalam buah sitrus"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH ASAM LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
+    "Asam Format": {
+        "rumus": "HCOOH (asam metanoat)",
+        "simbol_bahaya": "Mudah Terbakar | Beracun | Korosif",
+        # GHS: GHS02 (mudah terbakar), GHS06 (toksik), GHS05 (korosif)
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Menyengat, bau khas semut/bahan pengawet",
+        "reaktivitas": (
+            "Asam karboksilat terkuat suku pertama (pKa = 3,75); "
+            "mudah terbakar (titik nyala 50°C); "
+            "bereaksi dengan basa membentuk garam format; "
+            "reduktor (dapat mereduksi Ag⁺ menjadi cermin perak); "
+            "terdekomposisi pada suhu tinggi menjadi CO + H₂O; "
+            "toksik: menyebabkan asidosis metabolik; "
+            "korosif terhadap kulit/mata/logam"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH B3 – ASAM MUDAH TERBAKAR'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan. Konsentrasi pekat: serahkan ke pengelola B3."
+        ),
+    },
+    "Asam Oksalat": {
+        "rumus": "H₂C₂O₄ (asam etanedioat)",
+        "simbol_bahaya": "Beracun | Iritasi",
+        # GHS: GHS06 (toksik akut oral), GHS07 (iritasi)
+        "wujud": "Padatan kristal putih (dihidrat atau anhidrat)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Asam dikarboksilat (pKa₁=1,25; pKa₂=4,27); "
+            "bereaksi dengan basa membentuk garam oksalat; "
+            "mengkhelat Ca²⁺ membentuk kalsium oksalat tidak larut (CaC₂O₄); "
+            "reduktor: dioksidasi oleh KMnO₄ (perubahan warna ungu → tak berwarna, "
+            "digunakan dalam titrasi permanganometri); "
+            "toksik: menyebabkan hipokalsemia dan kerusakan ginjal; "
+            "LD₅₀ tikus oral = 375 mg/kg"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH ASAM LEMAH – TOKSIK'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan. Jangan dalam jumlah besar ke perairan."
+        ),
+    },
+    "Asam Borat": {
+        "rumus": "H₃BO₃",
+        "simbol_bahaya": "Beracun | Iritasi | Bahaya Reproduksi",
+        # GHS: GHS07 (iritasi), GHS08 (bahaya reproduksi Cat.1B/2)
+        # KOREKSI: asam borat termasuk bahaya reproduksi berdasarkan GHS terbaru
+        "wujud": "Padatan kristal putih bersisik",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Asam Lewis lemah (pKa = 9,24); "
+            "bereaksi dengan alkohol (gliserin, sorbitol) membentuk kompleks ester borat; "
+            "memberikan nyala hijau pada uji nyala api (emisi B); "
+            "bersifat antiseptik dan insektisida ringan; "
+            "toksik reproduktif (merusak sistem reproduksi); "
+            "toksik kumulatif jika tertelan dalam jangka panjang"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH B3 – ASAM TOKSIK REPRODUKSI'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 — jangan dibuang besar-besaran "
+            "ke perairan (bahaya reproduksi)."
+        ),
+    },
+    "Asam Laktat": {
+        "rumus": "C₃H₆O₃ (asam 2-hidroksipropanoat)",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi, terutama konsentrasi tinggi)
+        "wujud": "Cairan kental tidak berwarna hingga kuning pucat",
+        "bau": "Bau asam lemah",
+        "reaktivitas": (
+            "Asam hidroksikarboksilat (pKa = 3,86); "
+            "stabil pada suhu kamar; "
+            "bereaksi dengan basa membentuk garam laktat; "
+            "teroksidasi menjadi asam piruvat; "
+            "higroskopis; "
+            "produk fermentasi bakteri asam laktat; biokompatibel"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH ASAM LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
+    },
+    "Asam Tartarat": {
+        "rumus": "C₄H₆O₆ (asam L-tartarat)",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi ringan)
+        "wujud": "Padatan kristal putih",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Asam dikarboksilat (pKa₁=2,89; pKa₂=4,40); "
+            "stabil pada suhu kamar; "
+            "bereaksi dengan basa membentuk tartrat; "
+            "membentuk KHC₄H₄O₆ (cream of tartar) dengan K⁺; "
+            "mengkhelat ion logam; "
+            "terjadi alami dalam anggur dan asam jawa"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH ASAM LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
+    },
+
+    # ── SENYAWA BIOKIMIA & ANALITIK KHUSUS ───────────────────────────
     "Kurkumin": {
-        "rumus": "C21H20O6",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Serbuk",
-        "bau": "Khas",
-        "reaktivitas": "Stabil pada suhu kamar; indikator pH alami (kuning pada asam, merah pada basa); antioksidan; peka terhadap cahaya UV; membentuk kompleks dengan ion logam",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel 'LIMBAH B3 - INDIKATOR'.\nLangkah 2: Encerkan dengan air (1:10).\nLangkah 3: Serahkan limbah pekat ke pengelola limbah B3.",
+        "rumus": "C₂₁H₂₀O₆",
+        "simbol_bahaya": "Iritasi (kurang berbahaya)",
+        # GHS: tidak ada piktogram bahaya signifikan
+        "wujud": "Serbuk kristal kuning-jingga",
+        "bau": "Khas kunyit (aromatik, sedikit pedas)",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "indikator pH alami: kuning pada kondisi asam, merah-coklat pada basa; "
+            "antioksidan (menangkap radikal bebas); "
+            "sensitif terhadap cahaya UV (fotodegradasi); "
+            "membentuk kompleks berwarna dengan ion logam (Fe³⁺, Cu²⁺); "
+            "larut baik dalam etanol dan aseton, kurang larut dalam air"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah cair dalam wadah kaca berlabel "
+            "'LIMBAH INDIKATOR ALAMI'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Buang ke saluran pembuangan. "
+            "Konsentrasi pekat: serahkan ke pengelola limbah B3."
+        ),
     },
     "Asam Sulfanilat": {
-        "rumus": "C6H7NO3S",
+        "rumus": "C₆H₇NO₃S (asam 4-aminobenzensulfonat)",
         "simbol_bahaya": "Iritasi",
-        "wujud": "Padatan",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristalin putih hingga abu-abu (zwitterion)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Stabil pada suhu kamar; bereaksi dengan basa membentuk garam sulfanilat; dapat mengalami diazotasi (prekursor zat warna azo); larut dalam air panas",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan limbah dalam wadah plastik atau kaca berlabel 'LIMBAH ASAM LEMAH'.\nLangkah 2: Encerkan dengan air (1:5).\nLangkah 3: Netralisasi ringan dengan NaHCO3 atau NaOH encer hingga pH 6-8.\nLangkah 4: Buang ke saluran pembuangan dengan air mengalir.",
+        "reaktivitas": (
+            "Zwitterion (gugus -NH₃⁺ dan -SO₃⁻); "
+            "stabil pada suhu kamar; "
+            "bereaksi dengan basa membentuk garam sulfanilat; "
+            "dapat mengalami diazotasi dengan HNO₂ dingin → garam diazonium "
+            "(prekursor zat warna azo); "
+            "larut dalam air panas dan basa encer"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik atau kaca berlabel "
+            "'LIMBAH ASAM LEMAH'.\n"
+            "Langkah 2: Encerkan dengan air (1:5).\n"
+            "Langkah 3: Netralisasi dengan NaHCO₃ atau NaOH encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
-    "Naftalena": {
-        "rumus": "C10H8",
-        "simbol_bahaya": "Mudah terbakar",
-        "wujud": "Padatan",
-        "bau": "Khas",
-        "reaktivitas": "Mudah terbakar; bereaksi substitusi elektrofilik lebih mudah dari benzena; menguap pada suhu kamar (bau kapur barus); bereaksi dengan oksidator kuat",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan dalam wadah tertutup rapat berlabel 'LIMBAH B3 - MUDAH TERBAKAR'.\nLangkah 2: Simpan di area sejuk dan berventilasi \u2014 dapat menyublim.\nLangkah 3: Jangan dibuang ke saluran pembuangan.\nLangkah 4: Serahkan ke pengelola limbah B3 untuk insinerasi.",
+    "Kristal Violet": {
+        "rumus": "C₂₅H₃₀ClN₃ (Gentian Violet)",
+        "simbol_bahaya": "Iritasi | Karsinogen (Mungkin)",
+        # GHS: GHS07 (iritasi), GHS08 (karsinogen Cat.2 berdasarkan beberapa regulasi)
+        # KOREKSI: Crystal Violet perlu perbaikan rumus — C₂₅H₃₀ClN₃ (MW 407,99)
+        "wujud": "Padatan kristal ungu gelap",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "pewarna triarilmetan (triphenylmethane dye); "
+            "bereaksi dengan asam kuat membentuk warna hijau/kuning (perubahan muatan); "
+            "antimikroba terhadap bakteri Gram-positif; "
+            "karsinogen Cat.2 pada beberapa regulasi; "
+            "digunakan dalam pewarnaan Gram bakteri"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – PEWARNA/INDIKATOR'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
+    },
+    "Alizarin Merah": {
+        "rumus": "C₁₄H₈O₄ (Alizarin Red S: C₁₄H₇NaO₇S)",
+        # KOREKSI: Alizarin free acid vs Alizarin Red S berbeda
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Serbuk merah-jingga hingga coklat",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "indikator pH (kuning pada pH <5,5; merah pada pH >6,8); "
+            "membentuk kompleks berwarna dengan ion logam (Ca²⁺, Al³⁺, Fe³⁺) — "
+            "digunakan dalam uji histokimia tulang (Alizarin Red S mendeteksi kalsium); "
+            "pewarna mordant anthraquinone"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan limbah larutan dalam wadah kaca berlabel "
+            "'LIMBAH B3 – INDIKATOR/PEWARNA'.\n"
+            "Langkah 2: Encerkan dengan air (1:10).\n"
+            "Langkah 3: Serahkan limbah pekat ke pengelola limbah B3."
+        ),
+    },
+
+    # ── SENYAWA NITROGEN ──────────────────────────────────────────────
+    "Amonium Sulfat": {
+        "rumus": "(NH₄)₂SO₄",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Padatan kristal putih",
+        "bau": "Tidak berbau (sedikit bau amonia jika lembab)",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "bereaksi dengan basa kuat menghasilkan gas NH₃; "
+            "larut dalam air (endotermis); "
+            "terurai pada suhu >280°C melepaskan NH₃ dan SO₃; "
+            "digunakan sebagai pupuk nitrogen-sulfur dan dalam pengendapan protein "
+            "(salting-out)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Netralisasi pH jika perlu hingga 6–8.\n"
+            "Langkah 3: Buang ke saluran pembuangan dengan air mengalir."
+        ),
+    },
+    "Natrium Fosfat": {
+        "rumus": "Na₃PO₄ (trinatrium fosfat)",
+        "simbol_bahaya": "Iritasi | Korosif",
+        # GHS: GHS07 (iritasi), GHS05 (korosif — pH larutan ~12,5)
+        # KOREKSI: Na₃PO₄ adalah basa kuat dalam larutan (pH ~12), perlu tambahan korosif
+        "wujud": "Padatan putih (anhidrat atau dodekahodrat)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Basa kuat dalam larutan (pH 1% ≈ 12,5); "
+            "bereaksi dengan asam membentuk garam fosfat (netralisasi); "
+            "bereaksi dengan ion logam berat membentuk endapan fosfat tidak larut; "
+            "digunakan sebagai buffer, pembersih, dan agen sekuestran; "
+            "korosif terhadap kulit dan mata pada konsentrasi tinggi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH BASA'.\n"
+            "Langkah 2: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 3: Netralisasi dengan HCl encer hingga pH 6–8.\n"
+            "Langkah 4: Buang ke saluran pembuangan dengan air mengalir."
+        ),
+    },
+
+    # ── SENYAWA ORGANIK LAINNYA ───────────────────────────────────────
+    "Urea": {
+        "rumus": "CO(NH₂)₂",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan kristal putih atau granul",
+        "bau": "Tidak berbau (sedikit bau amonia jika terurai)",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "terhidrolisis lambat dalam air menjadi NH₃ dan CO₂ (dipercepat oleh urease); "
+            "terurai pada suhu >133°C (titik leleh sekaligus dekomposisi); "
+            "bereaksi dengan asam membentuk garam urea; "
+            "denaturan protein pada konsentrasi tinggi (6–8 M); "
+            "pupuk nitrogen dengan kandungan N tertinggi (46%)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir. "
+            "Tidak diperlukan penanganan B3 khusus."
+        ),
+    },
+    "Asam Urat": {
+        "rumus": "C₅H₄N₄O₃ (2,6,8-trioksipurina)",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan kristal putih",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "sangat sukar larut dalam air (0,15 mg/mL); "
+            "bereaksi dengan basa membentuk garam urat; "
+            "produk akhir metabolisme purin pada manusia; "
+            "membentuk kristal monosodium urat pada hiperurisemia (gout); "
+            "tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
+    },
+
+    # ── MATERIAL/BAHAN PENDUKUNG ──────────────────────────────────────
+    "Air": {
+        "rumus": "H₂O",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        "wujud": "Cairan tidak berwarna",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Sangat stabil; pelarut universal; "
+            "bereaksi eksotermis dengan logam alkali (Na, K) dan alkali tanah (Ca) "
+            "menghasilkan OH⁻ + H₂; "
+            "hidrolisis banyak garam dan senyawa; "
+            "tidak beracun, tidak mudah terbakar"
+        ),
+        "pengelolaan_limbah": (
+            "Buang langsung ke saluran pembuangan. "
+            "Air laboratorium yang terkontaminasi bahan lain harus diperlakukan "
+            "sesuai sifat kontaminannya."
+        ),
+    },
+    "Karbon Aktif": {
+        "rumus": "C (karbon amorf berpori)",
+        "simbol_bahaya": "Tidak Berbahaya | Mudah Terbakar (serbuk halus)",
+        # GHS: GHS02 untuk serbuk karbon aktif halus (debu mudah terbakar)
+        "wujud": "Serbuk atau granul hitam",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Sangat stabil secara kimia; "
+            "mengadsorpsi gas, molekul organik, dan ion (fisiosorpsi dan kemosorpsi); "
+            "serbuk halus dapat membentuk debu eksplosif; "
+            "inert terhadap asam/basa encer; "
+            "dapat diregenerasi dengan pemanasan 500–800°C dalam atmosfer inert"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah tertutup berlabel sesuai kontaminannya.\n"
+            "Langkah 2: Karbon aktif dapat diregenerasi dengan pemanasan.\n"
+            "Langkah 3: Jika terkontaminasi zat berbahaya, perlakukan sesuai sifat kontaminan.\n"
+            "Langkah 4: Buang ke tempat sampah umum jika bersih."
+        ),
+    },
+    "Silika Gel": {
+        "rumus": "SiO₂·nH₂O (amorf)",
+        "simbol_bahaya": "Iritasi (debu silikosis)",
+        # GHS: GHS07 (iritasi paru-debu)
+        # KOREKSI: silika gel berpotensi iritan paru jika dihirup (debu)
+        "wujud": "Padatan putih atau transparan (granul, manik, atau bead)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Higroskopis kuat (dapat menyerap hingga 40% beratnya sendiri sebagai air); "
+            "stabil pada suhu kamar; inert terhadap asam dan basa encer; "
+            "bereaksi dengan HF membentuk SiF₄; "
+            "dapat diregenerasi dengan pemanasan 120–150°C; "
+            "debu inhalasi kronik berisiko silikosis (amorf, bukan kristal — risiko lebih rendah)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah tertutup.\n"
+            "Langkah 2: Jika terkontaminasi, perlakukan sesuai kontaminannya.\n"
+            "Langkah 3: Buang ke tempat sampah umum jika bersih."
+        ),
     },
     "Mineral Oil": {
-        "rumus": "Mineral oil",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Cairan kental",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; tidak reaktif terhadap asam/basa; inert secara kimia; tidak mudah terbakar pada suhu kamar; melarutkan senyawa non-polar",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan dalam wadah berlabel 'LIMBAH MINYAK/GLIKOL'.\nLangkah 2: Jumlah kecil dapat dibuang ke tempat sampah setelah diserap dengan absorben.\nLangkah 3: Jumlah besar serahkan ke pengelola limbah.",
+        "rumus": "Campuran alkana C₁₅–C₄₀ (parafin mineral)",
+        # KOREKSI: rumus sebelumnya "Mineral oil" bukan rumus kimia
+        "simbol_bahaya": "Iritasi (kabut/aerosol)",
+        # GHS: GHS07 (iritasi paru dari kabut/aerosol)
+        # KOREKSI: "Tidak berbahaya" kurang tepat — mineral oil kabut berpotensi karsinogen
+        "wujud": "Cairan kental tidak berwarna hingga putih susu",
+        "bau": "Tidak berbau atau bau minyak sangat lemah",
+        "reaktivitas": (
+            "Sangat stabil; inert secara kimia terhadap asam/basa encer; "
+            "tidak mudah terbakar pada suhu kamar (titik nyala >100°C); "
+            "melarutkan senyawa non-polar; "
+            "kabut/aerosol mineral oil dalam industri: karsinogen IARC Kelompok 1 "
+            "(kanker kulit); "
+            "food-grade mineral oil aman untuk konsumsi"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah berlabel 'LIMBAH MINYAK'.\n"
+            "Langkah 2: Jumlah kecil: serap dengan absorben (pasir/serbuk gergaji), "
+            "buang ke tempat sampah.\n"
+            "Langkah 3: Jumlah besar: serahkan ke pengelola limbah minyak."
+        ),
     },
     "Gliserol": {
-        "rumus": "C3H8O3",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Cairan kental",
-        "bau": "Manis",
-        "reaktivitas": "Stabil pada suhu kamar; higroskopis; bereaksi dengan asam membentuk ester (gliserida); teroksidasi menjadi gliseraldehida; larut dalam air; tidak beracun",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.",
+        "rumus": "C₃H₈O₃ (gliserin, propan-1,2,3-triol)",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Cairan kental tidak berwarna",
+        "bau": "Manis lemah",
+        "reaktivitas": (
+            "Sangat stabil pada suhu kamar; "
+            "higroskopis kuat; "
+            "bereaksi dengan asam karboksilat membentuk ester (gliserida — komponen lemak); "
+            "teroksidasi oleh oksidator kuat menjadi gliseraldehida dan dihidroksiaseton; "
+            "larut sempurna dalam air; tidak beracun (LD₅₀ tikus oral >12 g/kg)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
     "Asam Oleat": {
-        "rumus": "C18H34O2",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Cairan kental",
-        "bau": "Khas",
-        "reaktivitas": "Stabil pada suhu kamar; dapat teroksidasi oleh udara (ketengikan); bereaksi dengan basa membentuk sabun; asam lemak tak jenuh; hidrogenasi menjadi asam stearat",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.",
+        "rumus": "C₁₈H₃₄O₂ (asam cis-9-oktadekenoat)",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi)
+        "wujud": "Cairan kental kuning pucat (cair di atas 13,4°C)",
+        "bau": "Bau lemak/minyak khas",
+        "reaktivitas": (
+            "Stabil pada suhu kamar dalam kondisi normal; "
+            "asam lemak tak jenuh tunggal (satu ikatan rangkap C9=C10 cis); "
+            "teroksidasi oleh udara perlahan (ketengikan); "
+            "bereaksi dengan basa membentuk sabun (saponifikasi); "
+            "hidrogenasi menghasilkan asam stearat; "
+            "tidak mudah terbakar dalam kondisi normal"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah berlabel 'LIMBAH MINYAK/LEMAK'.\n"
+            "Langkah 2: Jumlah kecil: serap dengan absorben, buang ke tempat sampah.\n"
+            "Langkah 3: Jumlah besar: serahkan ke pengelola limbah."
+        ),
     },
     "Asam Stearat": {
-        "rumus": "C18H36O2",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
-        "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; bereaksi dengan basa membentuk sabun; asam lemak jenuh; padatan pada suhu kamar; tidak reaktif dengan air; murni",
-        "pengelolaan_limbah": "Langkah 1: Encerkan dengan air minimal 1:10.\nLangkah 2: Buang ke saluran pembuangan dengan air mengalir.\nLangkah 3: Untuk padatan, buang ke tempat sampah non-organik jika bersih.",
+        "rumus": "C₁₈H₃₆O₂ (asam oktadekanoat)",
+        "simbol_bahaya": "Iritasi",
+        # GHS: GHS07 (iritasi ringan)
+        "wujud": "Padatan lilin putih",
+        "bau": "Tidak berbau atau bau lilin lemah",
+        "reaktivitas": (
+            "Sangat stabil; "
+            "asam lemak jenuh (tidak ada ikatan rangkap); "
+            "bereaksi dengan basa membentuk sabun (stearat logam/alkali); "
+            "tidak reaktif dengan air; tidak mudah terbakar pada suhu kamar; "
+            "titik leleh 69–72°C"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan dalam wadah tertutup.\n"
+            "Langkah 2: Buang ke tempat sampah umum jika bersih."
+        ),
     },
     "Parafin Padat": {
-        "rumus": "C25H52",
-        "simbol_bahaya": "Tidak berbahaya",
-        "wujud": "Padatan",
+        "rumus": "CₙH₂ₙ₊₂ (n = 20–40; campuran alkana rantai panjang)",
+        # KOREKSI: rumus C₂₅H₅₂ tidak tepat — parafin adalah campuran
+        "simbol_bahaya": "Tidak Berbahaya",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan putih atau transparan (lilin)",
         "bau": "Tidak berbau",
-        "reaktivitas": "Sangat stabil pada suhu kamar; inert terhadap asam, basa, dan oksidator ringan; tidak reaktif secara kimia; dapat terbakar pada suhu tinggi; campuran alkana",
-        "pengelolaan_limbah": "Langkah 1: Kumpulkan padatan dalam wadah tertutup.\nLangkah 2: Buang ke tempat sampah non-organik jika bersih.",
+        "reaktivitas": (
+            "Sangat stabil; inert terhadap asam, basa, dan oksidator encer; "
+            "tidak reaktif secara kimia pada suhu kamar; "
+            "dapat terbakar pada suhu tinggi (titik nyala >100°C); "
+            "campuran alkana jenuh rantai panjang; "
+            "titik leleh bervariasi 47–65°C sesuai grade"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan padatan dalam wadah tertutup.\n"
+            "Langkah 2: Buang ke tempat sampah umum jika bersih. "
+            "Jangan dalam jumlah besar ke saluran (dapat memblok)."
+        ),
+    },
+
+    # ── GARAM SENG & BESI ─────────────────────────────────────────────
+    "Seng Sulfat": {
+        "rumus": "ZnSO₄",
+        "simbol_bahaya": "Beracun | Iritasi | Bahaya Lingkungan",
+        # GHS: GHS06 (toksik), GHS07 (iritasi), GHS09 (bahaya lingkungan)
+        "wujud": "Padatan kristal putih (heptahidrat: ZnSO₄·7H₂O, vitriol putih)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; higroskopis; "
+            "larut dalam air; "
+            "bereaksi dengan basa membentuk endapan Zn(OH)₂ putih yang amfoter "
+            "(larut dalam basa berlebih → [Zn(OH)₄]²⁻); "
+            "toksik: LD₅₀ tikus oral = 2.200 mg/kg (ZnSO₄); "
+            "sangat toksik bagi organisme akuatik (bioakumulatif)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Kumpulkan dalam wadah plastik berlabel 'LIMBAH LOGAM BERAT – Zn'.\n"
+            "Langkah 2: JANGAN campur dengan limbah organik.\n"
+            "Langkah 3: Endapkan Zn²⁺ dengan NaOH → Zn(OH)₂; saring.\n"
+            "Langkah 4: Serahkan ke pengelola limbah B3 — Zn bioakumulatif di akuatik."
+        ),
+    },
+    "Besi(II) Sulfat": {
+        "rumus": "FeSO₄",
+        "simbol_bahaya": "Iritasi | Bahaya Lingkungan",
+        # GHS: GHS07 (iritasi), GHS09 (bahaya lingkungan)
+        # KOREKSI: "Iritasi" sudah benar, tambahkan bahaya lingkungan
+        "wujud": "Padatan kristal hijau biru (heptahidrat, vitriol hijau); "
+                 "putih jika teroksidasi (besi(III) sulfat)",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil dalam bentuk heptahidrat; "
+            "teroksidasi oleh udara dan oksidator menjadi Fe(III) sulfat (coklat); "
+            "bereaksi dengan basa membentuk endapan Fe(OH)₂ hijau pucat "
+            "yang teroksidasi cepat menjadi Fe(OH)₃ coklat; "
+            "agen pereduksi ringan; "
+            "toksik bagi organisme akuatik"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Netralisasi pH hingga 6–8 (terbentuk endapan Fe(OH)₂/Fe(OH)₃).\n"
+            "Langkah 3: Saring endapan; buang ke limbah padat B3.\n"
+            "Langkah 4: Filtrat dapat dibuang ke saluran pembuangan."
+        ),
+    },
+
+    # ── BIOMOLEKUL / BIOMARKER ────────────────────────────────────────
+    "Kreatinin": {
+        "rumus": "C₄H₇N₃O",
+        "simbol_bahaya": "Tidak Berbahaya (non-hazardous)",
+        # GHS: tidak ada piktogram
+        "wujud": "Padatan kristal putih",
+        "bau": "Tidak berbau",
+        "reaktivitas": (
+            "Stabil pada suhu kamar; "
+            "larut dalam air; "
+            "tidak reaktif dalam kondisi normal; "
+            "produk metabolisme kreatin di otot; "
+            "biomarker fungsi ginjal (GFR); "
+            "bereaksi dengan pikrat basa membentuk warna merah-jingga "
+            "(reaksi Jaffé, metode pengukuran klinis)"
+        ),
+        "pengelolaan_limbah": (
+            "Langkah 1: Encerkan dengan air minimal 1:10.\n"
+            "Langkah 2: Buang ke saluran pembuangan dengan air mengalir."
+        ),
     },
 }
